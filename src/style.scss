@@ -7,3 +7,5 @@ textarea, select, input, button { outline: none; }
 @import 'theme/buttons';
 
 @import 'theme/page/index';
+
+body, html { font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 600; }
