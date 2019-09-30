@@ -1,17 +1,17 @@
 const webpack = require("webpack");
-const path = require("path");
+const Path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const UglifyJSPlugin = require("uglifyjs-webpack-plugin");
 const OptimizeCSSAssets = require("optimize-css-assets-webpack-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-
+const Pages = require('./src/pages.ts');
 
 let config = {
     mode: "production",
-    entry: {main: "./src/index.ts"},
+    entry: {main: "./src/app.ts"},
     output: {
-        path: path.resolve(__dirname, "./public"),
+        path: Path.resolve(__dirname, "./public"),
         filename: 'bundle.[hash].js'
     },
     resolve: {
@@ -23,6 +23,20 @@ let config = {
                 test: /\.tsx?$/,
                 loader: "ts-loader",
                 exclude: /node_modules/
+            },
+            {
+                test: /\.hbs$/,
+                loader: 'handlebars-loader',
+                query: {
+                    helperDirs: [
+                        Path.join(__dirname, 'src', 'helpers')
+                    ],
+                    partialDirs: [
+                        Path.join(__dirname, 'src', 'layouts'),
+                        Path.join(__dirname, 'src', 'components'),
+                        Path.join(__dirname, 'src', 'pages')
+                    ]
+                }
             },
             {
                 test: /\.scss$/,
@@ -46,12 +60,6 @@ let config = {
         new MiniCssExtractPlugin({
             filename: "style.[contenthash].css"
         }),
-        new HtmlWebpackPlugin({
-            inject: false,
-            hash: true,
-            template: './src/index.html',
-            filename: 'index.html'
-        }),
         new UglifyJSPlugin(),
         new OptimizeCSSAssets(),
         new CopyWebpackPlugin([
@@ -60,7 +68,7 @@ let config = {
         ])
     ],
     devServer: {
-        contentBase: path.resolve(__dirname, "./src"),
+        contentBase: Path.resolve(__dirname, "./src"),
         watchContentBase: true,
         historyApiFallback: true,
         inline: true,
@@ -68,6 +76,21 @@ let config = {
         hot: true
     },
     devtool: "eval-source-map"
+};
+
+// Add handlbars template pages
+for (let i = 0; i < Pages.length; i++) {
+
+    let page = Object.assign({}, Pages[i]);
+
+    config.plugins.push(
+        new HtmlWebpackPlugin({
+            template: page.template,
+            filename: page.output,
+            title: page.content.title,
+            description: page.content.description
+        })
+    );
 }
-  
+
 module.exports = config;

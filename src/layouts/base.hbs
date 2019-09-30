@@ -2,10 +2,10 @@
 <html lang="fr" dir="ltr">
 <head>
 
-    <title>OCode</title>
+    <title>{{ htmlWebpackPlugin.options.title }}</title>
 
     <meta charset="UTF-8">
-    <meta name="description" content="">
+    <meta name="description" content="{{ htmlWebpackPlugin.options.description }}">
     <meta name="keywords" content="ocode">
     <meta http-equiv="Content-Security-Policy"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -45,13 +45,8 @@
     <link href="assets/stylesheets/normalize.css" rel="stylesheet">
     <link href="assets/stylesheets/flexboxgrid.min.css" rel="stylesheet">
     <link href="assets/stylesheets/flexboxgrid-helpers.min.css" rel="stylesheet">
-    <link href="<%=htmlWebpackPlugin.files.chunks.main.css %>" rel="stylesheet">
 </head>
 <body>
-
-    Ocode
-
-    <!-- Scripts -->
-    <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+    {{> @partial-block }}
 </body>
 </html>
