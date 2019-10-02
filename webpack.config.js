@@ -31,7 +31,7 @@ let config = {
                 loader: 'handlebars-loader',
                 query: {
                     helperDirs: [
-                        //Path.join(__dirname, 'src', 'helpers')
+                        Path.join(__dirname, 'src', 'helpers')
                     ],
                     partialDirs: [
                         Path.join(__dirname, 'src', 'layouts'),

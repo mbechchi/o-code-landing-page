@@ -7,7 +7,7 @@ const pages = [
         title: 'Home',
         description: 'Home Page'
       },
-      template: './src/pages/home.hbs'
+      template: './src/pages/home/home.hbs'
     }
 ];
 
