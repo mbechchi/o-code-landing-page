@@ -2,24 +2,34 @@
 
     {{> navbar/navbar }}
 
-    <main>
+    <main id="page-home">
+
+        <!-- Intro -->
         <section id="intro">
             <div class="container">
                 <div class="row center-xs start-sm middle-sm">
 
-                    <div class="col-xs-10 col-sm-6">
-                        <img src="assets/images/logo.svg" alt="O°code" height="36px">
-                        <h1>{{{ i18n.INTRO_TITLE }}}</h1>
-                        <p>{{ i18n.INTRO_SUBTITLE }}</p>
+                    <div class="col-xs-10 col-sm-6 col-left">
+                        <img src="assets/images/logo.svg" alt="O°code" height="64px">
+                        <h1>{{{ i18n.INTRO.TITLE }}}</h1>
+                        <p>{{ i18n.INTRO.SUBTITLE }}</p>
                     </div>
 
-                    <div class="col-xs-10 col-sm-6 first-xs last-sm">
-                        <!-- illustration -->
+                    <div class="col-xs-10 col-sm-6 first-xs last-sm col-right">
+                        <img src="assets/images/intro-right.svg" alt="illustration" height="618px">
                     </div>
 
                 </div>
+
+                <div class="follow-us row middle-xs">
+                    <span>{{ i18n.INTRO.FOLLOW_US }}</span>
+                    <a href="#" title="Facebook"><img src="assets/images/facebook.png" alt="Facebook" height="16px"></a>
+                    <a href="#" title="Twitter"><img src="assets/images/twitter.png" alt="Twitter" height="16px"></a>
+                </div>
             </div>
         </section>
+
+
     </main>
 
 {{/ base }}

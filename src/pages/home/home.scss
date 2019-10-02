@@ -1,0 +1,39 @@
+#page-home {
+
+    section#intro {
+
+        .container { position: relative; }
+
+        .col-left {
+            img { margin-bottom: 32px; }
+            h1 { margin-top: 0; }
+        }
+        .col-right { padding-left: 32px; }
+
+        .follow-us {
+            position: absolute;
+            left: 0;
+            bottom: 96px;
+            height: 16px;
+            line-height: 16px;
+
+            span {
+                margin-right: 24px;
+                font-size: 1.2rem;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                color: $primary;
+            }
+
+            a {
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                margin-right: 24px;
+
+                &:last-child { margin-right: 0; }
+            }
+        }
+    }
+}

@@ -22,6 +22,11 @@ $flexboxgrid-max-width: 960px;
 /* Global */
 ::selection { background: $primary; color: white; }
 
-body, html { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 600; }
+body, html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    overflow-x: hidden;
+}
 
 .container { width: 80%; }
