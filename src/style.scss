@@ -1,6 +1,13 @@
 * { box-sizing: border-box; }
 textarea, select, input, button { outline: none; }
 
+/* Variables */
+$flexboxgrid-outer-margin: 0rem;
+$flexboxgrid-gutter-width: 1rem;
+$flexboxgrid-max-width: 960px;
+
+
+/* Imports */
 @import 'theme/flexboxgrid';
 @import 'theme/fonts';
 @import 'theme/variables';
@@ -11,16 +18,10 @@ textarea, select, input, button { outline: none; }
 @import 'layouts/navbar/navbar';
 @import 'pages/home/home';
 
+
+/* Global */
 ::selection { background: $primary; color: white; }
 
 body, html { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 600; }
 
-@media only screen and (min-width: 48em) {
-    .container { width: 69rem; }
-}
-@media only screen and (min-width: 64em) {
-    .container { width: 85rem; }
-}
-@media only screen and (min-width: 75em) {
-    .container { width: 96rem; }
-}
+.container { width: 80%; }

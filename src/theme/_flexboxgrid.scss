@@ -26,13 +26,13 @@ $flexboxgrid-max-width: 1200px !default;
 $gutter-compensation: $flexboxgrid-gutter-width * .5 * -1;
 $half-gutter-width: $flexboxgrid-gutter-width * .5;
 
-.wrapper {
+.container {
   box-sizing: border-box;
   max-width: $flexboxgrid-max-width;
   margin: 0 auto;
 }
 
-.container, .container-fluid {
+.container-fluid {
   margin-right: auto;
   margin-left: auto;
   padding-right: $flexboxgrid-outer-margin;
