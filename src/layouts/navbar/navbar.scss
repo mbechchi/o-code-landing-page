@@ -1,0 +1,46 @@
+nav {
+
+    $navLinkMinWidth: 80px;
+
+    height: $navHeight;
+
+    > .container {
+        height: $navHeight;
+        > .row { height: $navHeight; }
+    }
+
+    .col-logo {
+        a { display: inline-block; height: 44px; }
+    }
+
+    .col-menu {
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            height: $navHeight;
+            line-height: $navHeight;
+
+            li {
+                display: inline-block;
+                text-align: center;
+                min-width: $navLinkMinWidth;
+                margin-right: 32px;
+
+                &:last-child {
+                    a { color: $secondary; }
+                }
+
+                a {
+                    text-decoration: none;
+                    color: $darkLight;
+                    font-size: 1.2rem;
+                    transition: color 250ms linear;
+
+                    &:hover { color: $primary; }
+                }
+            }
+        }
+    }
+}

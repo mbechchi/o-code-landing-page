@@ -6,8 +6,20 @@ textarea, select, input, button { outline: none; }
 @import 'theme/colors';
 @import 'theme/buttons';
 
+@import 'layouts/navbar/navbar';
 @import 'pages/home/home';
 
 ::selection { background: $primary; color: white; }
 
-body, html { font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 600; }
+body, html { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 600; }
+
+
+@media only screen and (min-width: 48em) {
+    .container { width: 69rem; }
+}
+@media only screen and (min-width: 64em) {
+    .container { width: 85rem; }
+}
+@media only screen and (min-width: 75em) {
+    .container { width: 96rem; }
+}
