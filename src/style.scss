@@ -6,7 +6,7 @@ textarea, select, input, button { outline: none; }
 @import 'theme/colors';
 @import 'theme/buttons';
 
-@import 'theme/page/home';
+@import 'pages/home/home';
 
 ::selection { background: $primary; color: white; }
 
