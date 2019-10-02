@@ -2,5 +2,24 @@
 
     {{> navbar/navbar }}
 
-    HOME CONTENT
+    <main>
+        <section id="intro">
+            <div class="container">
+                <div class="row center-xs start-sm middle-sm">
+
+                    <div class="col-xs-10 col-sm-5">
+                        <img src="assets/images/logo.svg" alt="O°code" height="36px">
+                        <h1>{{{ i18n.INTRO_TITLE }}}</h1>
+                        <p>{{ i18n.INTRO_SUBTITLE }}</p>
+                    </div>
+
+                    <div class="col-xs-10 col-sm-7 first-xs last-sm">
+                        <!-- illustration -->
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
 {{/ base }}
