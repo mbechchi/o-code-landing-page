@@ -39,4 +39,20 @@
             }
         }
     }
+
+    section#services {
+
+        padding: 160px 0;
+
+        h2, p { text-align: left; }
+
+        .service {
+            margin: 0 0 56px;
+
+            &:nth-child(2n) {
+                h2, p { text-align: right; }
+            }
+            &:last-child { margin-bottom: 0; }
+        }
+    }
 }
