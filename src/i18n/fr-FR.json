@@ -1,47 +1,61 @@
 {
-    "NAVBAR_SERVICE": "Service",
-    "NAVBAR_APP": "Applications",
-    "NAVBAR_ASSETS": "Atouts",
-    "NAVBAR_TEAM": "Équipe",
-    "NAVBAR_CONTACT": "Contact",
+    "NAVBAR": {
+        "SERVICE": "Service",
+        "APP": "Applications",
+        "ASSETS": "Atouts",
+        "TEAM": "Équipe",
+        "CONTACT": "Contact"
+    },
 
-    "INTRO_TITLE": "Faire de <span class=\"text-secondary\">chaque objet</span><br />une pièce unique pour rétablir<br />la confiance dans les échanges",
-    "INTRO_SUBTITLE": "Une technologie de marquage sous BlockChain pour rendre accessible, fiable et transparente la ligne de vie de chaque objet",
-    "INTRO_FOLLOW_US": "Suivez-nous",
+    "INTRO": {
+        "TITLE": "Faire de <span class=\"text-secondary\">chaque objet</span><br />une pièce unique pour rétablir<br />la confiance dans les échanges",
+        "SUBTITLE": "Une technologie de marquage sous BlockChain pour rendre accessible, fiable et transparente la ligne de vie de chaque objet",
+        "FOLLOW_US": "Suivez-nous"
+    },
 
-    "SERVICE_1_TITLE": "Le suivi de la ligne de vie de chaque objet",
-    "SERVICE_1_TEXT": "Un simple scan du produit permet de <span class=\"text-secondary\">consulter ses origines</span>, son parcours et son histoire, d'en <span class=\"text-secondary\">transférer la propriété</span>, et d'y associer des documents digitaux, des contenus textes, images ou vidéos.",
-    "SERVICE_2_TITLE": "18 milliards de milliards de <br />combinaisons possibles",
-    "SERVICE_2_TEXT": "Gravé, imprimé, ou percé, vous marquez chaque objet d'un sceau <span class=\"text-secondary\">unique</span>, <span class=\"text-secondary\">infalsifiable</span> et <span class=\"text-secondary\">inaltérable</span>, et l'enregistrer à vie dans une BlockChain privée.",
-    "SERVICE_3_TITLE": "Lien direct propriétaire",
-    "SERVICE_3_TEXT": "Une révolution marketing qui permet de <span class=\"text-secondary\">communiquer au cas par cas</span>, avec les propriéraires actuels des objets même après revente, sans accès possible à leurs <span class=\"text-secondary\">données personnelles</span>.",
-    
-    "APP_1": "Marketing conversationnel",
-    "APP_2": "Dématérialisation des contenus associés à l’objet",
-    "APP_3": "Traçabilité unitaire dans l’agroalimentaire",
-    "APP_4": "Économie circulaire dans le textile",
-    "APP_5": "Lutte contre le recel",
-    "APP_6": "Lutte contre la contrefaçon",
+    "SERVICES": {
+        "1_TITLE": "Le suivi de la ligne de vie de chaque objet",
+        "1_TEXT": "Un simple scan du produit permet de <span class=\"text-secondary\">consulter ses origines</span>, son parcours et son histoire, d'en <span class=\"text-secondary\">transférer la propriété</span>, et d'y associer des documents digitaux, des contenus textes, images ou vidéos.",
+        "2_TITLE": "18 milliards de milliards de <br />combinaisons possibles",
+        "2_TEXT": "Gravé, imprimé, ou percé, vous marquez chaque objet d'un sceau <span class=\"text-secondary\">unique</span>, <span class=\"text-secondary\">infalsifiable</span> et <span class=\"text-secondary\">inaltérable</span>, et l'enregistrer à vie dans une BlockChain privée.",
+        "3_TITLE": "Lien direct propriétaire",
+        "3_TEXT": "Une révolution marketing qui permet de <span class=\"text-secondary\">communiquer au cas par cas</span>, avec les propriéraires actuels des objets même après revente, sans accès possible à leurs <span class=\"text-secondary\">données personnelles</span>."
+    },
 
-    "ASSETS_TITLE": "Atouts",
-    "ASSETS_DESCRIPTION": "Un marquage LowTech inscrit dans le temps et écologique à contre courant des tendances actuelles du RFID, et une BlockChain privée, atout indispensable de sécurité durable, revisitée pour gagner en performance et 1000x moins gourmande en énergie que les BlockChain courantes.",
-    "ASSETS_FOCUS_1": "Économique",
-    "ASSETS_FOCUS_2": "Écologique",
-    "ASSETS_FOCUS_3": "Fiable",
+    "APP": {
+        "1": "Marketing conversationnel",
+        "2": "Dématérialisation des contenus associés à l’objet",
+        "3": "Traçabilité unitaire dans l’agroalimentaire",
+        "4": "Économie circulaire dans le textile",
+        "5": "Lutte contre le recel",
+        "6": "Lutte contre la contrefaçon"
+    },
 
-    "TEAM_NAV_PREV": "Précédent",
-    "TEAM_NAV_NEXT": "Suivant",
+    "ASSETS": {
+        "TITLE": "Atouts",
+        "DESCRIPTION": "Un marquage LowTech inscrit dans le temps et écologique à contre courant des tendances actuelles du RFID, et une BlockChain privée, atout indispensable de sécurité durable, revisitée pour gagner en performance et 1000x moins gourmande en énergie que les BlockChain courantes.",
+        "FOCUS_1": "Économique",
+        "FOCUS_2": "Écologique",
+        "FOCUS_3": "Fiable"
+    },
 
-    "CONTACT_TITLE": "On imagine ensemble votre usage de O°code ?",
-    "CONTACT_SUBTITLE": "Envoyez-nous un message et gardons le contact !",
-    "CONTACT_FORM_LASTNAME": "Votre nom",
-    "CONTACT_FORM_LASTNAME_PLACEHOLDER": "Ex: Dupont",
-    "CONTACT_FORM_FIRSTNAME": "Votre prénom",
-    "CONTACT_FORM_FIRSTNAME_PLACEHOLDER": "Ex: Jean",
-    "CONTACT_FORM_EMAIL": "Votre email",
-    "CONTACT_FORM_EMAIL_PLACEHOLDER": "Ex: dupont@gmail.com",
-    "CONTACT_FORM_COMPANY": "Votre entreprise",
-    "CONTACT_FORM_COMPANY_PLACEHOLDER": "Ex: Dupont SARL",
-    "CONTACT_FORM_MESSAGE": "Votre message",
-    "CONTACT_FORM_MESSAGE_PLACEHOLDER": "Tapez votre message"
+    "TEAM": {
+        "NAV_PREV": "Précédent",
+        "NAV_NEXT": "Suivant"
+    },
+
+    "CONTACT": {
+        "TITLE": "On imagine ensemble votre usage de O°code ?",
+        "SUBTITLE": "Envoyez-nous un message et gardons le contact !",
+        "FORM_LASTNAME": "Votre nom",
+        "FORM_LASTNAME_PLACEHOLDER": "Ex: Dupont",
+        "FORM_FIRSTNAME": "Votre prénom",
+        "FORM_FIRSTNAME_PLACEHOLDER": "Ex: Jean",
+        "FORM_EMAIL": "Votre email",
+        "FORM_EMAIL_PLACEHOLDER": "Ex: dupont@gmail.com",
+        "FORM_COMPANY": "Votre entreprise",
+        "FORM_COMPANY_PLACEHOLDER": "Ex: Dupont SARL",
+        "FORM_MESSAGE": "Votre message",
+        "FORM_MESSAGE_PLACEHOLDER": "Tapez votre message"
+    }
 }
