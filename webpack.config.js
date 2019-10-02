@@ -6,6 +6,8 @@ const OptimizeCSSAssets = require("optimize-css-assets-webpack-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const Pages = require('./src/pages.ts');
+const i18n_FR = require('./src/i18n/fr-FR.json');
+
 
 let config = {
     mode: "production",
@@ -29,13 +31,16 @@ let config = {
                 loader: 'handlebars-loader',
                 query: {
                     helperDirs: [
-                        Path.join(__dirname, 'src', 'helpers')
+                        //Path.join(__dirname, 'src', 'helpers')
                     ],
                     partialDirs: [
                         Path.join(__dirname, 'src', 'layouts'),
                         Path.join(__dirname, 'src', 'components'),
                         Path.join(__dirname, 'src', 'pages')
-                    ]
+                    ],
+                    precompileOptions: {
+                        knownHelpersOnly: false
+                    }
                 }
             },
             {
@@ -44,15 +49,11 @@ let config = {
             },
             {
                 test: /\.(png|svg|jpg|jpeg|gif|ico)$/,
-                use: [
-                    'file-loader'
-                ]
+                use: ['file-loader']
             },
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/,
-                use: [
-                    'file-loader'
-                ]
+                use: ['file-loader']
             }
         ]
     },
@@ -86,6 +87,9 @@ for (let i = 0; i < Pages.length; i++) {
     config.plugins.push(
         new HtmlWebpackPlugin({
             template: page.template,
+            templateParameters: {
+                i18n: i18n_FR
+            },
             filename: page.output,
             title: page.content.title,
             description: page.content.description
