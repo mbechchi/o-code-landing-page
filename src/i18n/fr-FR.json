@@ -22,13 +22,13 @@
         "3_TEXT": "Une révolution marketing qui permet de <span class=\"text-secondary\">communiquer au cas par cas</span>, avec les propriéraires actuels des objets même après revente, sans accès possible à leurs <span class=\"text-secondary\">données personnelles</span>."
     },
 
-    "APP": {
-        "1": "Marketing conversationnel",
-        "2": "Dématérialisation des contenus associés à l’objet",
-        "3": "Traçabilité unitaire dans l’agroalimentaire",
-        "4": "Économie circulaire dans le textile",
-        "5": "Lutte contre le recel",
-        "6": "Lutte contre la contrefaçon"
+    "APPS": {
+        "APP_1": "Marketing conversationnel",
+        "APP_2": "Dématérialisation des contenus associés à l’objet",
+        "APP_3": "Traçabilité unitaire dans l’agroalimentaire",
+        "APP_4": "Économie circulaire dans le textile",
+        "APP_5": "Lutte contre le recel",
+        "APP_6": "Lutte contre la contrefaçon"
     },
 
     "ASSETS": {

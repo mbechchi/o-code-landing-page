@@ -55,4 +55,30 @@
             &:last-child { margin-bottom: 0; }
         }
     }
+
+    section#applications {
+
+        padding: 160px 0;
+
+        .app {
+            position: relative;
+            height: 64px;
+            margin: 0 0 56px;
+
+            .text {
+                position: absolute;
+                top: 0;
+                right: 64px;
+                bottom: 0;
+                left: 0;
+                font-size: 1.4rem;
+                font-weight: bold;
+                margin-right: 24px;
+            }
+        }
+
+        .col-right {
+            .app .text { left: 64px; right: 0; margin-right: 0; margin-left: 24px; }
+        }
+    }
 }
