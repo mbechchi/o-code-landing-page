@@ -2,7 +2,7 @@
     "NAVBAR": {
         "SERVICE": "Service",
         "APP": "Applications",
-        "ASSETS": "Atouts",
+        "ADVANTAGES": "Atouts",
         "TEAM": "Équipe",
         "CONTACT": "Contact"
     },
@@ -31,7 +31,7 @@
         "APP_6": "Lutte contre la contrefaçon"
     },
 
-    "ASSETS": {
+    "ADVANTAGES": {
         "TITLE": "Atouts",
         "DESCRIPTION": "Un marquage LowTech inscrit dans le temps et écologique à contre courant des tendances actuelles du RFID, et une BlockChain privée, atout indispensable de sécurité durable, revisitée pour gagner en performance et 1000x moins gourmande en énergie que les BlockChain courantes.",
         "FOCUS_1": "Économique",
