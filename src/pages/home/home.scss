@@ -1,5 +1,7 @@
 #page-home {
 
+    $sectionPadding: 160px 0;
+
     section#intro {
 
         .container { position: relative; }
@@ -42,7 +44,7 @@
 
     section#services {
 
-        padding: 160px 0;
+        padding: $sectionPadding;
 
         h2, p { text-align: left; }
 
@@ -58,7 +60,7 @@
 
     section#applications {
 
-        padding: 160px 0;
+        padding: $sectionPadding;
 
         .app {
             position: relative;
@@ -79,6 +81,18 @@
 
         .col-right {
             .app .text { left: 64px; right: 0; margin-right: 0; margin-left: 24px; }
+        }
+    }
+
+    section#advantages {
+
+        padding: $sectionPadding;
+
+        .row-desc { margin-bottom: 64px; }
+
+        .advantage {
+            img { margin-bottom: 24px; }
+            .label { font-size: 1.4rem; font-weight: bold; }
         }
     }
 }

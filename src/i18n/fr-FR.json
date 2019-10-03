@@ -34,9 +34,9 @@
     "ADVANTAGES": {
         "TITLE": "Atouts",
         "DESCRIPTION": "Un marquage LowTech inscrit dans le temps et écologique à contre courant des tendances actuelles du RFID, et une BlockChain privée, atout indispensable de sécurité durable, revisitée pour gagner en performance et 1000x moins gourmande en énergie que les BlockChain courantes.",
-        "FOCUS_1": "Économique",
-        "FOCUS_2": "Écologique",
-        "FOCUS_3": "Fiable"
+        "ADVANTAGE_1": "Économique",
+        "ADVANTAGE_2": "Écologique",
+        "ADVANTAGE_3": "Fiable"
     },
 
     "TEAM": {
