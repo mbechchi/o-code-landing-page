@@ -56,6 +56,7 @@
         "FORM_COMPANY": "Votre entreprise",
         "FORM_COMPANY_PLACEHOLDER": "Ex: Dupont SARL",
         "FORM_MESSAGE": "Votre message",
-        "FORM_MESSAGE_PLACEHOLDER": "Tapez votre message"
+        "FORM_MESSAGE_PLACEHOLDER": "Tapez votre message",
+        "FORM_BTN_SUBMIT": "Envoyer"
     }
 }
