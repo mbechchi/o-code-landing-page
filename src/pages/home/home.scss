@@ -163,6 +163,7 @@
                     font-weight: bold;
                     text-transform: uppercase;
                     letter-spacing: 1px;
+                    cursor: pointer;
                 }
                 .btn-prev {
                     background-image: url('assets/images/slider-prev.svg');
@@ -182,11 +183,17 @@
                 .member-image {
                     position: absolute;
                     top: 0;
-                    left: -40px;
+                    left: 110px;
                     right: 24px;
-                    height: 340px;
-                    background: url('assets/images/slider-mask.svg') center center no-repeat;
+                    width: 374px;
+                    height: 343px;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    -webkit-clip-path: url(#member-preview-shape);
+                    clip-path: url(#member-preview-shape);
                     z-index: 2;
+                    transition: background-image 100ms linear;
                 }
             }
 
