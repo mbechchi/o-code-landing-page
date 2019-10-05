@@ -143,33 +143,41 @@
         <section id="team">
             <div class="container">
 
+                <!-- SVG clipPath 1 -->
+                <svg height="100%" width="100%">
+                    <defs>
+                        <clipPath id="member-shape-1">
+                            <path d="M49.5855844,30.3149404 C58.3029582,19.4838009 42.2700065,0 19.8496126,0 C-2.57078141,0 -6.3493954,23.0246318 10.3076128,42.9026672 C26.964621,62.7807026 40.8682106,41.1460799 49.5855844,30.3149404 Z" />
+                        </clipPath>
+                    </defs>
+                </svg>
+
+                <!-- SVG clipPath 2 -->
+                <svg height="100%" width="100%">
+                    <defs>
+                        <clipPath id="member-shape-2">
+                            <path d="M56,32.8941644 C56,11.6992778 45.438231,0 21.1012133,0 C-3.2358044,0 -6.29035358,37.9250462 10.7435087,46.0070486 C27.7773711,54.0890509 56,54.0890509 56,32.8941644 Z" />
+                        </clipPath>
+                    </defs>
+                </svg>
+
                 <!-- Members -->
                 <div class="row center-xs middle-sm end-sm">
 
                     <div class="col-xs-10 col-sm-4 members">
                         <div class="row">
-                            <div class="col-xs-4 col-sm-3 member">
-                                <img src="assets/images/advantage-guard.svg" alt="O°code" width="100%">
-                            </div>
-                            <div class="col-xs-4 col-sm-3 member">
-                                <img src="assets/images/advantage-guard.svg" alt="O°code" width="100%">
-                            </div>
-                            <div class="col-xs-4 col-sm-3 member">
-                                <img src="assets/images/advantage-guard.svg" alt="O°code" width="100%">
-                            </div>
-                            <div class="col-xs-4 col-sm-3 member">
-                                <img src="assets/images/advantage-guard.svg" alt="O°code" width="100%">
-                            </div>
-                            <div class="col-xs-4 col-sm-3 member">
-                                <img src="assets/images/advantage-guard.svg" alt="O°code" width="100%">
-                            </div>
+                            {{#each i18n.TEAM.MEMBERS}}
+                                <div class="col-xs-4 col-sm-3 member" title="{{ this.NAME }}">
+                                    <div class="member-image" style="background-image: url('assets/images/{{ this.IMAGE }}');"></div>
+                                </div>
+                            {{/each}}
                         </div>
                     </div>
 
                 </div>
 
                 <!-- Preview member -->
-                <div class="row center-xs middle-sm start-sm">
+                <div class="row center-xs middle-sm start-sm member-preview-wrapper">
 
                     <div class="col-xs-10 col-sm-7 member-preview">
                         <div class="btn-prev">{{ i18n.TEAM.NAV_PREV }}</div>

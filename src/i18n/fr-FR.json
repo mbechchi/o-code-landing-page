@@ -40,6 +40,55 @@
     },
 
     "TEAM": {
+        "MEMBERS": [{
+                "IMAGE": "slider-1.png",
+                "INFORMATIONS": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu massa, pharetra ac arcu non, rutrum elementum nibh. Curabitur malesuada leo lacinia, rhoncus elit nec, sodales arcu.",
+                "NAME": "Jean-Baptiste Pondevy",
+                "STATUS": "Co-foudner",
+                "XP": "Co-foundateur de Bimédia<br />Président de CS Bimédia"
+        }, {
+            "IMAGE": "slider-2.jpg",
+            "INFORMATIONS": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu massa, pharetra ac arcu non, rutrum elementum nibh. Curabitur malesuada leo lacinia, rhoncus elit nec, sodales arcu.",
+            "NAME": "Vincent Roux",
+            "STATUS": "Co-foudner",
+            "XP": "Co-foundateur de Bimédia<br />Président de CS Bimédia"
+        }, {
+            "IMAGE": "slider-1.png",
+            "INFORMATIONS": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu massa, pharetra ac arcu non, rutrum elementum nibh. Curabitur malesuada leo lacinia, rhoncus elit nec, sodales arcu.",
+            "NAME": "Jean-Baptiste Pondevy",
+            "STATUS": "Co-foudner",
+            "XP": "Co-foundateur de Bimédia<br />Président de CS Bimédia"
+        }, {
+            "IMAGE": "slider-2.jpg",
+            "INFORMATIONS": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu massa, pharetra ac arcu non, rutrum elementum nibh. Curabitur malesuada leo lacinia, rhoncus elit nec, sodales arcu.",
+            "NAME": "Vincent Roux",
+            "STATUS": "Co-foudner",
+            "XP": "Co-foundateur de Bimédia<br />Président de CS Bimédia"
+        }, {
+            "IMAGE": "slider-1.png",
+            "INFORMATIONS": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu massa, pharetra ac arcu non, rutrum elementum nibh. Curabitur malesuada leo lacinia, rhoncus elit nec, sodales arcu.",
+            "NAME": "Jean-Baptiste Pondevy",
+            "STATUS": "Co-foudner",
+            "XP": "Co-foundateur de Bimédia<br />Président de CS Bimédia"
+        }, {
+            "IMAGE": "slider-2.jpg",
+            "INFORMATIONS": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu massa, pharetra ac arcu non, rutrum elementum nibh. Curabitur malesuada leo lacinia, rhoncus elit nec, sodales arcu.",
+            "NAME": "Vincent Roux",
+            "STATUS": "Co-foudner",
+            "XP": "Co-foundateur de Bimédia<br />Président de CS Bimédia"
+        }, {
+            "IMAGE": "slider-1.png",
+            "INFORMATIONS": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu massa, pharetra ac arcu non, rutrum elementum nibh. Curabitur malesuada leo lacinia, rhoncus elit nec, sodales arcu.",
+            "NAME": "Jean-Baptiste Pondevy",
+            "STATUS": "Co-foudner",
+            "XP": "Co-foundateur de Bimédia<br />Président de CS Bimédia"
+        }, {
+            "IMAGE": "slider-2.jpg",
+            "INFORMATIONS": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu massa, pharetra ac arcu non, rutrum elementum nibh. Curabitur malesuada leo lacinia, rhoncus elit nec, sodales arcu.",
+            "NAME": "Vincent Roux",
+            "STATUS": "Co-foudner",
+            "XP": "Co-foundateur de Bimédia<br />Président de CS Bimédia"
+        }],
         "NAV_PREV": "‹ Précédent",
         "NAV_NEXT": "Suivant ›"
     },
