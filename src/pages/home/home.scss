@@ -44,7 +44,7 @@
 
     section#services {
 
-        padding: $sectionPadding;
+        padding: $sectionPadding 0;
 
         h2, p { text-align: left; }
 
@@ -60,7 +60,7 @@
 
     section#applications {
 
-        padding: $sectionPadding;
+        padding: $sectionPadding 0;
 
         .app {
             position: relative;
@@ -86,7 +86,7 @@
 
     section#advantages {
 
-        padding: $sectionPadding;
+        padding: $sectionPadding 0;
 
         .row-desc { margin-bottom: 64px; }
 
@@ -98,7 +98,7 @@
 
     section#team {
 
-        padding: $sectionPadding;
+        padding: $sectionPadding 0 0;
 
         .members {
             .member { margin-bottom: 24px; }
