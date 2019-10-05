@@ -100,7 +100,7 @@
 
         padding: $sectionPadding 0 0;
 
-        .members {
+        #members {
 
             .member {
                 width: 100%;
@@ -122,7 +122,7 @@
                     clip-path: url(#member-shape-1);
                 }
 
-                &:hover {
+                &:hover, &.selected {
                     background-image: url('assets/images/slider-member-back-1_hover.svg');
                 }
 
@@ -132,14 +132,14 @@
 
                     .member-image { -webkit-clip-path: url(#member-shape-2); clip-path: url(#member-shape-2); }
 
-                    &:hover {
+                    &:hover, &.selected {
                         background-image: url('assets/images/slider-member-back-2_hover.svg');
                     }
                 }
             }
         }
 
-        .member-preview-wrapper {
+        #member-preview-wrapper {
 
             margin-top: -24px;
 
