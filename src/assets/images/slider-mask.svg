@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="373px" height="337px" viewBox="0 0 373 337" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 56.3 (101010) - https://sketch.com -->
+    <title>7451BA6A-1804-4F98-869B-BC555EBA537BTeam</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M374.091398,241.541127 C425.322352,168.530007 417.334346,118.605423 220.845027,45.6487351 C24.3557087,-27.307953 -19.8868338,181.715292 78.0043936,315.710209 C175.895621,449.705126 322.860444,314.552248 374.091398,241.541127 Z" id="path-1"></path>
+    </defs>
+    <g id="WD---Site-vitrine" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop---Home-HD" transform="translate(-318.000000, -3134.000000)">
+            <g id="Group-36" transform="translate(-205.000000, 2668.479381)">
+                <g id="Jean-Baptiste" transform="translate(489.000000, 423.520619)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#585AFA" transform="translate(214.344789, 201.604481) scale(1, -1) rotate(-190.000000) translate(-214.344789, -201.604481) " xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

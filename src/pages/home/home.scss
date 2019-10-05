@@ -103,6 +103,60 @@
         .members {
             .member { margin-bottom: 24px; }
         }
+
+        .member-preview {
+
+            position: relative;
+            min-height: 400px;
+
+            .btn-prev, .btn-next {
+                position: absolute;
+                top: 0;
+                width: 170px;
+                height: 110px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                text-align: center;
+                line-height: 116px;
+                color: white;
+                font-size: 1.2rem;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+            .btn-prev {
+                background-image: url('assets/images/slider-prev.svg');
+                top: -30px;
+                left: 0;
+                padding-left: 15px;
+                z-index: 1;
+            }
+            .btn-next {
+                background-image: url('assets/images/slider-next.svg');
+                right: 64px;
+                top: -20px;
+                line-height: 96px;
+                z-index: 3;
+            }
+
+            .member-image {
+                position: absolute;
+                top: 0;
+                left: -40px;
+                right: 24px;
+                height: 340px;
+                background: url('assets/images/slider-mask.svg') center center no-repeat;
+                z-index: 2;
+            }
+        }
+
+        .member-description {
+            .member-name { color: $primary; }
+            .member-status { font-size: 1.4rem; color: $secondary; margin-bottom: 8px; }
+            .member-xp { font-size: 1.4rem; color: $grey; margin-bottom: 40px; }
+            .member-informations { font-size: 1.4rem; color: $light; }
+        }
     }
 
     section#contact {

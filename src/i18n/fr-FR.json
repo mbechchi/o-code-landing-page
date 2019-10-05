@@ -40,8 +40,8 @@
     },
 
     "TEAM": {
-        "NAV_PREV": "Précédent",
-        "NAV_NEXT": "Suivant"
+        "NAV_PREV": "‹ Précédent",
+        "NAV_NEXT": "Suivant ›"
     },
 
     "CONTACT": {
