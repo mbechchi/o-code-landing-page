@@ -262,5 +262,15 @@
                 }
             }
         }
+
+        section#advantages {
+
+            padding: $sectionPadding 0;
+
+            .advantage {
+                img { width: 30%; }
+                .label { margin-bottom: 40px; }
+            }
+        }
     }
 }
