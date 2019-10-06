@@ -5,3 +5,10 @@ p { color: $grey; font-size: 1.4rem; line-height: 1.5; margin: 0; }
 
 .text-primary { color: $primary; }
 .text-secondary { color: $secondary; }
+
+
+@media screen and (max-width: map-get($flexboxgrid-breakpoints, md)) {
+    h1 { font-size: 2.1rem; }
+    h2 { font-size: 1.6rem; }
+    p { font-size: 1.2rem; }
+}
