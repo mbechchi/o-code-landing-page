@@ -231,5 +231,13 @@
             padding: $sectionPadding 0;
             .follow-us { position: relative; left: auto; bottom: auto; margin-top: 32px; }
         }
+
+        section#services {
+            padding: $sectionPadding 0;
+            p, h2 { text-align: center !important; }
+            .service {
+                img { height: 96px; margin-bottom: 24px; }
+            }
+        }
     }
 }

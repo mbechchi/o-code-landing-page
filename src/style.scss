@@ -31,3 +31,7 @@ body, html {
 }
 
 .container { width: 80%; }
+
+@media screen and (max-width: map-get($flexboxgrid-breakpoints, sm)) {
+    .container { width: 96%; }
+}
