@@ -43,4 +43,12 @@ nav {
             }
         }
     }
+
+    @media screen and (max-width: map-get($flexboxgrid-breakpoints, md)) {
+        .col-menu ul li { margin-right: 16px; }
+    }
+
+    @media screen and (max-width: map-get($flexboxgrid-breakpoints, sm)) {
+
+    }
 }
