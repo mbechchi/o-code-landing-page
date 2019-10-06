@@ -233,10 +233,33 @@
         }
 
         section#services {
+
             padding: $sectionPadding 0;
+
             p, h2 { text-align: center !important; }
             .service {
                 img { height: 96px; margin-bottom: 24px; }
+            }
+        }
+
+        section#applications {
+
+            padding: $sectionPadding 0;
+
+            .app {
+                height: auto;
+                margin-bottom: 24px;
+
+                .text {
+                    position: relative;
+                    right: auto !important;
+                    top: auto;
+                    bottom: auto;
+                    left: auto !important;
+                    width: 100%;
+                    margin: 16px 0 32px 0 !important;
+                    text-align: center;
+                }
             }
         }
     }
