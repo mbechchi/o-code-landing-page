@@ -319,8 +319,36 @@
             padding: $sectionPadding 0;
 
             #member-preview-wrapper {
+
                 margin-top: 24px;
-                .member-preview { display: none; }
+
+                .member-preview {
+
+                    min-height: 300px;
+
+                    .btn-prev, .btn-next {
+                        top: 0;
+                        width: 130px;
+                        font-family: 'CircularStd';
+                        font-weight: 900;
+                        font-size: 2.8rem;
+                        text-align: center;
+
+                        span.visible-xs { display: block !important; }
+                    }
+                    .btn-prev { left: 40px; }
+                    .btn-next { right: 40px; }
+
+                    .member-image {
+                        position: relative;
+                        top: auto;
+                        left: auto;
+                        right: auto;
+                        transform: scale3d(0.6, 0.6, 0.6);
+                    }
+                }
+
+                .member-description { margin-top: -24px; text-align: left; }
             }
         }
     }

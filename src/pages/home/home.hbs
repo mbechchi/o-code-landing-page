@@ -129,7 +129,7 @@
                     </div>
                     <div class="col-xs-4 col-sm-2 col-sm-offset-1 advantage">
                         <img src="assets/images/advantage-planet.svg" alt="O°code" width="100%">
-                        <div class="label text-primary">{{ i18n.ADVANTAGES.ADVANTAGE_3 }}</div>
+                        <div class="label text-primary">{{ i18n.ADVANTAGES.ADVANTAGE_2 }}</div>
                     </div>
                     <div class="col-xs-4 col-sm-2 col-sm-offset-1 advantage">
                         <img src="assets/images/advantage-guard.svg" alt="O°code" width="100%">
@@ -171,7 +171,7 @@
                 </svg>
 
                 <!-- Members -->
-                <div class="row center-xs middle-sm end-sm">
+                <div class="row hidden-xs middle-sm end-sm">
 
                     <div id="members" class="col-xs-10 col-sm-4">
                         <div class="row">
@@ -188,13 +188,19 @@
                 <!-- Preview member -->
                 <div id="member-preview-wrapper" class="row center-xs middle-sm start-sm">
 
-                    <div class="col-xs-10 col-sm-7 member-preview">
-                        <div class="btn-prev">{{ i18n.TEAM.NAV_PREV }}</div>
-                        <div class="btn-next">{{ i18n.TEAM.NAV_NEXT }}</div>
+                    <div class="col-sm-7 member-preview">
+                        <div class="btn-prev">
+                            <span class="hidden-xs">{{ i18n.TEAM.NAV_PREV }}</span>
+                            <span class="visible-xs">&#60;</span>
+                        </div>
+                        <div class="btn-next">
+                            <span class="hidden-xs">{{ i18n.TEAM.NAV_NEXT }}</span>
+                            <span class="visible-xs">&#62;</span>
+                        </div>
                         <div class="member-image"></div>
                     </div>
 
-                    <div class="col-xs-10 col-sm-4 member-description">
+                    <div class="col-xs-12 col-sm-4 member-description">
                         <h2 class="member-name">Jean-Baptiste Pondevy</h2>
                         <div class="member-status">Co-foudner</div>
                         <div class="member-xp">Co-foundateur de Bimédia<br />Président de CS Bimédia</div>
