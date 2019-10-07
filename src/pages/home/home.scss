@@ -306,9 +306,11 @@
 
             padding: $sectionPadding 0;
 
+            .row-desc { margin-bottom: 32px; }
+
             .advantage {
-                img { width: 30%; }
-                .label { margin-bottom: 40px; }
+                img { width: 80%; }
+                .label { font-size: 1.2rem; }
             }
         }
 
