@@ -231,7 +231,26 @@
 
         section#intro {
             padding: $sectionPadding 0;
-            .follow-us { position: relative; left: auto; bottom: auto; margin-top: 32px; }
+            .col-right {
+                padding: 0;
+                img { height: 310px; transform: translate3d(30%, 16px, 0); }
+            }
+            .follow-us {
+
+                width: 24px;
+                margin-left: 16px;
+
+                a {
+                    width: 24px;
+                    height: 24px;
+                    margin-right: 0;
+                    margin-bottom: 24px;
+
+                    img { width: 24px; height: 24px; }
+
+                    &:last-child { margin-bottom: 0; }
+                }
+            }
         }
 
         section#services {
