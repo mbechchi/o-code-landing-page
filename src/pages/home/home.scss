@@ -7,8 +7,23 @@
         .container { position: relative; }
 
         .col-left {
+
+            position: relative;
+            transform: translate3d(0px, -64px, 0px);
+
+            img, h1, p { position: relative; }
+
             img { margin-bottom: 32px; }
             h1 { margin-top: 0; }
+
+            .shape {
+                position: absolute;
+                top: -74px;
+                left: -74px;
+                right: 0;
+                height: 434px;
+                background: url('assets/images/intro-shape.svg') 0 0 no-repeat;
+            }
         }
         .col-right { padding-left: 32px; }
 

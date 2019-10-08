@@ -1,4 +1,5 @@
 import i18n from '../../i18n/fr-FR.json';
+import Rellax from 'rellax';
 
 interface Member {
     IMAGE: string;
@@ -10,6 +11,16 @@ interface Member {
 
 // Init
 window.onload = () => {
+    initSlider();
+
+    new Rellax('.rellax', {
+        speed: -2,
+        round: true,
+        vertical: true
+    });
+};
+
+const initSlider = () => {
 
     let memberIndexSelected: number = 0;
 
@@ -66,4 +77,4 @@ window.onload = () => {
     };
 
     selectMember(memberIndexSelected);
-}
+};
