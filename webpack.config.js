@@ -5,7 +5,7 @@ const UglifyJSPlugin = require("uglifyjs-webpack-plugin");
 const OptimizeCSSAssets = require("optimize-css-assets-webpack-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const Pages = require('./src/pages.ts');
+const Pages = require('./src/pages/pages.ts');
 const i18n_FR = require('./src/i18n/fr-FR.json');
 
 
@@ -90,9 +90,7 @@ for (let i = 0; i < Pages.length; i++) {
             templateParameters: {
                 i18n: i18n_FR
             },
-            filename: page.output,
-            title: page.content.title,
-            description: page.content.description
+            filename: page.output
         })
     );
 }
