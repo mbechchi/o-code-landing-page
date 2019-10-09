@@ -2,9 +2,9 @@
 
     $sectionPadding: 160px 0;
 
-    section#intro {
+    .container { position: relative; }
 
-        .container { position: relative; }
+    section#intro {
 
         .col-left {
 
@@ -17,12 +17,10 @@
             h1 { margin-top: 0; }
 
             .shape {
-                position: absolute;
                 top: -74px;
                 left: -74px;
-                right: 0;
                 height: 434px;
-                background: url('assets/images/intro-shape.svg') 0 0 no-repeat;
+                background-image: url('assets/images/intro-shape.svg');
             }
         }
         .col-right { padding-left: 32px; }
@@ -61,9 +59,26 @@
 
         padding: $sectionPadding 0;
 
+        .shape-left {
+            right: auto;
+            width: 806px;
+            height: 558px;
+            margin-left: -216px;
+            margin-top: -8px;
+            background-image: url('assets/images/service-shape-left.svg');
+        }
+        .shape-right {
+            left: auto;
+            width: 349px;
+            height: 500px;
+            margin-right: -308px;
+            background-image: url('assets/images/service-shape-right.svg');
+        }
+
         h2, p { text-align: left; }
 
         .service {
+            position: relative;
             margin: 0 0 56px;
 
             &:nth-child(2n) {

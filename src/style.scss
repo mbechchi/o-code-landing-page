@@ -32,6 +32,16 @@ body, html {
 
 .container { width: 80%; }
 
+.shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 0;
+}
+
 @media screen and (max-width: map-get($flexboxgrid-breakpoints, sm)) {
     .container { width: 90%; }
 }
