@@ -118,6 +118,24 @@
 
         padding: $sectionPadding 0;
 
+        .shape-left {
+            right: auto;
+            width: 600px;
+            height: 600px;
+            margin-left: -210px;
+            margin-top: -44px;
+            background-image: url('assets/images/advantages-shape-left.svg');
+        }
+        .shape-right {
+            left: auto;
+            width: 480px;
+            height: 480px;
+            margin-right: -350px;
+            margin-top: 10px;
+            background-image: url('assets/images/advantages-shape-right.svg');
+        }
+
+        .row { position: relative; }
         .row-desc { margin-bottom: 64px; }
 
         .advantage {
