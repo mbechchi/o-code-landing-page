@@ -1,6 +1,6 @@
 #page-home {
 
-    $sectionPadding: 200px 0;
+    $sectionPaddingV: 200px;
 
     .container { position: relative; }
 
@@ -57,7 +57,7 @@
 
     section#services {
 
-        padding: $sectionPadding;
+        padding: $sectionPaddingV 0;
 
         .shape-left {
             right: auto;
@@ -90,7 +90,7 @@
 
     section#applications {
 
-        padding: $sectionPadding;
+        padding: $sectionPaddingV 0;
 
         .app {
             position: relative;
@@ -116,7 +116,7 @@
 
     section#advantages {
 
-        padding: $sectionPadding;
+        padding: $sectionPaddingV 0;
 
         .shape-left {
             right: auto;
@@ -146,7 +146,7 @@
 
     section#team {
 
-        padding: $sectionPadding;
+        padding: $sectionPaddingV 0;
 
         .shape {
             right: auto;
@@ -269,7 +269,7 @@
 
         background-color: #4C4CE0;
         color: white;
-        padding: $sectionPadding;
+        padding: $sectionPaddingV 0 ($sectionPaddingV + 48px);
 
         .shape-left {
             right: auto;
@@ -302,10 +302,10 @@
 
     @media screen and (max-width: map-get($flexboxgrid-breakpoints, sm)) {
 
-        $sectionPadding: 64px 0;
+        $sectionPaddingV: 64px;
 
         section#intro {
-            padding: $sectionPadding;
+            padding: $sectionPaddingV 0;
             .col-right {
                 padding: 0;
                 img { height: 310px; transform: translate3d(30%, 16px, 0); }
@@ -330,7 +330,7 @@
 
         section#services {
 
-            padding: $sectionPadding;
+            padding: $sectionPaddingV 0;
 
             h2 { text-align: center !important; }
             .service {
@@ -340,7 +340,7 @@
 
         section#applications {
 
-            padding: $sectionPadding;
+            padding: $sectionPaddingV 0;
 
             .app {
 
@@ -379,7 +379,7 @@
 
         section#advantages {
 
-            padding: $sectionPadding;
+            padding: $sectionPaddingV 0;
 
             .row-desc { margin-bottom: 32px; }
 
@@ -391,7 +391,7 @@
 
         section#team {
 
-            padding: $sectionPadding;
+            padding: $sectionPaddingV 0;
 
             #member-preview-wrapper {
 
@@ -429,7 +429,7 @@
 
         section#contact {
 
-            padding: $sectionPadding;
+            padding: $sectionPaddingV 0;
 
             form button { margin-top: 0; }
         }
