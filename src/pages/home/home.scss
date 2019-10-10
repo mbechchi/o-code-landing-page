@@ -467,6 +467,12 @@
         section#contact {
 
             padding: $sectionPaddingV 0;
+            overflow: hidden;
+
+            .shape {
+                &.shape-left { display: none; }
+                &.shape-right { top: auto; bottom: -320px; right: -100px; }
+            }
 
             form button { margin-top: 0; }
         }
