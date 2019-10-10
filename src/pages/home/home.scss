@@ -81,6 +81,8 @@
             position: relative;
             margin: 0 0 56px;
 
+            img { max-width: 100%; }
+
             &:nth-child(2n) {
                 h2, p { text-align: right; }
             }
