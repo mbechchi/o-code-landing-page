@@ -2,8 +2,13 @@ nav {
 
     $navLinkMinWidth: 80px;
 
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     height: $navHeight;
+    background-color: transparent;
+    transition: box-shadow 100ms linear, height 300ms ease-in-out, background-color 200ms linear;
     z-index: 9;
 
     > .container {
@@ -12,7 +17,13 @@ nav {
     }
 
     .col-logo {
-        a { display: inline-block; height: 44px; }
+        #link-logo {
+            display: inline-block;
+            height: 44px;
+            opacity: 0;
+            transform: translate3d(0, 100%, 0);
+            transition: opacity 200ms ease-out, transform 300ms ease-in-out;
+        }
     }
 
     .col-menu {
@@ -44,6 +55,13 @@ nav {
                 }
             }
         }
+    }
+
+    &.shrink {
+        background-color: white;;
+        box-shadow: 0 6px 8px -3px rgba(black, 0.1);
+
+        .col-logo #link-logo { opacity: 1; transform: translate3d(0, 0, 0); }
     }
 
     @media screen and (max-width: map-get($flexboxgrid-breakpoints, md)) {

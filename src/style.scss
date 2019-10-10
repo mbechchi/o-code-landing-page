@@ -30,6 +30,8 @@ body, html {
     overflow-x: hidden;
 }
 
+body { padding-top: $navHeight; }
+
 .container { width: 80%; }
 
 .shape {
