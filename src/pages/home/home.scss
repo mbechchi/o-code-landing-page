@@ -297,8 +297,6 @@
 
     @media screen and (max-width: map-get($flexboxgrid-breakpoints, md)) {
 
-        .shape { background-size: 80%; }
-
         section#intro {
             .col-left img { height: 48px; }
         }
@@ -327,14 +325,20 @@
 
         $sectionPaddingV: 64px;
 
-        .shape { background-size: 50%; }
-
         section#intro {
+
             padding: $sectionPaddingV 0;
+
             .col-right {
+                height: 310px;
                 padding: 0;
-                img { height: 310px; transform: translate3d(30%, 16px, 0); }
+                img { position: absolute; right: -30%; height: 310px; }
             }
+            .col-left {
+                transform: translate3d(0, 0, 0);
+                .shape { top: -54px; left: -210px; }
+            }
+
             .follow-us {
 
                 width: 24px;
