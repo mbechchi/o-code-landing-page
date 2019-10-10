@@ -302,6 +302,25 @@
         section#intro {
             .col-left img { height: 48px; }
         }
+
+        section#team {
+
+            padding: $sectionPaddingV 0;
+
+            #member-preview-wrapper {
+
+                .member-preview {
+
+                    .member-image {
+                        position: relative;
+                        top: auto;
+                        left: auto;
+                        right: auto;
+                        transform: scale3d(0.7, 0.7, 0.7);
+                    }
+                }
+            }
+        }
     }
 
     @media screen and (max-width: map-get($flexboxgrid-breakpoints, sm)) {
