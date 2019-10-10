@@ -17,7 +17,7 @@ export class NavbarAnim {
 
         // Listen mobile menu button click
         const mobileMenuBtnEl = document.querySelector('#mobile-menu-btn');
-        mobileMenuBtnEl.addEventListener('click', this.onMobileMenuButtonClick.bind(this));
+        //mobileMenuBtnEl.addEventListener('click', this.onMobileMenuButtonClick.bind(this));
     }
 
     onPageScroll() {

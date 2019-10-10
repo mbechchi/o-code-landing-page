@@ -1,5 +1,7 @@
 import i18n from '../../i18n/fr-FR.json';
 import Rellax from 'rellax';
+import { SmoothScrollAnim } from '../../scripts/smooth-scroll';
+import { NavbarAnim } from '../../layouts/navbar/navbar';
 
 interface Member {
     IMAGE: string;
@@ -11,6 +13,13 @@ interface Member {
 
 // Init
 window.onload = () => {
+
+    // Init smooth scroll
+    new SmoothScrollAnim();
+
+    // Init navbar animations
+    new NavbarAnim();
+
     initSlider();
 
     new Rellax('.rellax', {
