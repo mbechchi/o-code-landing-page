@@ -410,6 +410,12 @@
 
             padding: $sectionPaddingV 0;
 
+            .shape {
+                background-size: 70%;
+                &.shape-left { margin-top: 46px; }
+                &.shape-right { margin-right: -460px; }
+            }
+
             .row-desc { margin-bottom: 32px; }
 
             .advantage {
