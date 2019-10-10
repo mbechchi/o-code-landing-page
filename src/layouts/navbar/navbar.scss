@@ -2,7 +2,9 @@ nav {
 
     $navLinkMinWidth: 80px;
 
+    position: relative;
     height: $navHeight;
+    z-index: 9;
 
     > .container {
         height: $navHeight;
