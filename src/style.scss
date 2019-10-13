@@ -27,10 +27,9 @@ body, html {
     font-family: 'Montserrat', sans-serif;
     font-size: 10px;
     font-weight: 600;
-    overflow-x: hidden;
 }
 
-body { padding-top: $navHeight; }
+body { padding-top: $navHeight; overflow-x: hidden; }
 
 .container { width: 80%; }
 
@@ -45,5 +44,6 @@ body { padding-top: $navHeight; }
 }
 
 @media screen and (max-width: map-get($flexboxgrid-breakpoints, sm)) {
+    body { padding-top: 0; }
     .container { width: 90%; }
 }

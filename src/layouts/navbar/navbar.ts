@@ -21,7 +21,7 @@ export class NavbarAnim {
 
         // Listen mobile menu button click
         const mobileMenuBtnEl = document.querySelector('#mobile-menu-btn');
-        //mobileMenuBtnEl.addEventListener('click', this.onMobileMenuButtonClick.bind(this));
+        mobileMenuBtnEl.addEventListener('click', this.onMobileMenuButtonClick.bind(this));
 
         // Get all navbar-hash sections
         const sectionsEl = document.querySelectorAll('section[navbar-hash]');
