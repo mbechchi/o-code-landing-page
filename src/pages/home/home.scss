@@ -226,7 +226,11 @@
                     font-weight: bold;
                     text-transform: uppercase;
                     letter-spacing: 1px;
+                    transform: scale3d(1, 1, 1);
+                    transition: color 200ms ease-in-out, transform 200ms ease-in-out;
                     cursor: pointer;
+
+                    &:hover { transform: scale3d(1.04, 1.04, 1.04); }
                 }
                 .btn-prev {
                     background-image: url('assets/images/slider-prev.svg');
@@ -234,6 +238,8 @@
                     left: 0;
                     padding-left: 15px;
                     z-index: 1;
+
+                    &:hover { color: $primary; }
                 }
                 .btn-next {
                     background-image: url('assets/images/slider-next.svg');
@@ -241,6 +247,8 @@
                     top: -20px;
                     line-height: 96px;
                     z-index: 3;
+
+                    &:hover { color: $secondary; }
                 }
 
                 .member-image {
