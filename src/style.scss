@@ -1,5 +1,6 @@
 * { box-sizing: border-box; }
 textarea, select, input, button { outline: none; }
+a, button { user-select: none; }
 
 /* Variables */
 $flexboxgrid-outer-margin: 0rem;

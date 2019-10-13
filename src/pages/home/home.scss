@@ -170,6 +170,7 @@
                 background: url('assets/images/slider-member-back-1.svg') center center no-repeat;
                 background-size: contain;
                 cursor: pointer;
+                user-select: none;
 
                 .member-image {
                     width: 56px;
@@ -208,6 +209,7 @@
 
                 position: relative;
                 min-height: 400px;
+                user-select: none;
 
                 .btn-prev, .btn-next {
                     position: absolute;
