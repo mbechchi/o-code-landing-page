@@ -49,7 +49,7 @@ export class NavbarAnim {
 
         if(!this.didScroll) {
             this.didScroll = true;
-            setTimeout(this.scrollPage.bind(this), 250);
+            setTimeout(this.scrollPage.bind(this), 150);
         }
     }
 
