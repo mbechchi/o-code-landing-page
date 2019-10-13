@@ -23,6 +23,12 @@ export class NavbarAnim {
         const mobileMenuBtnEl = document.querySelector('#mobile-menu-btn');
         mobileMenuBtnEl.addEventListener('click', this.onMobileMenuButtonClick.bind(this));
 
+        // Listen mobile menu links click
+        const mobileMenuLinksEl = document.querySelectorAll('#mobile-menu a');
+        mobileMenuLinksEl.forEach((el) => {
+            el.addEventListener('click', this.onMobileMenuButtonClick.bind(this));
+        });
+
         // Get all navbar-hash sections
         const sectionsEl = document.querySelectorAll('section[navbar-hash]');
         sectionsEl.forEach((el: HTMLElement) => {

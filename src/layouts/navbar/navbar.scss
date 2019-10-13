@@ -26,6 +26,12 @@ nav {
             opacity: 0;
             transform: translate3d(0, 100%, 0);
             transition: opacity 200ms ease-out, transform 300ms ease-in-out;
+
+            svg { height: 100%; fill: $dark; transition: fill 200ms linear; }
+
+            &:hover {
+                svg { fill: $primary; }
+            }
         }
     }
 
@@ -83,10 +89,10 @@ nav {
     .hamburger {
 
         position: relative;
-        display: inline-block !important;
+        display: inline-block;
         overflow: visible;
         padding: 8px;
-        margin-right: -8px;
+        margin-right: 8px;
         cursor: pointer;
         transform: rotate(0);
         transition: opacity $navHamburgerAnimDuration linear, transform $navHamburgerAnimDuration ease-in-out;
@@ -148,7 +154,7 @@ nav {
 
                 a {
                     font-weight: bold;
-                    font-size: 1.2rem;
+                    font-size: 1.6rem;
                     letter-spacing: 1px;
                     color: white;
                     text-transform: uppercase;
@@ -170,8 +176,9 @@ nav {
     &.mobile-menu-opened {
 
         height: 100vh;
-        background-color: $primary;
-        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        background-color: $primary !important;
+
+        .col-logo #link-logo svg { fill: white; }
 
         #mobile-menu { visibility: visible; transform: scale3d(1, 1, 1); }
 
@@ -187,7 +194,7 @@ nav {
     }
 
     &.shrink {
-        background-color: white;;
+        background-color: white;
         box-shadow: 0 6px 8px -3px rgba(black, 0.1);
 
         .col-logo #link-logo { opacity: 1; transform: translate3d(0, 0, 0); }
@@ -199,7 +206,12 @@ nav {
 
     @media screen and (max-width: map-get($flexboxgrid-breakpoints, sm)) {
 
-        position: relative;
+        height: $navSmallHeight;
+
+        > .container {
+            height: $navSmallHeight;
+            > .row { height: $navSmallHeight; }
+        }
 
         .col-logo #link-logo { opacity: 1; transform: translate3d(0, 0, 0); }
     }

@@ -44,6 +44,6 @@ body { padding-top: $navHeight; overflow-x: hidden; }
 }
 
 @media screen and (max-width: map-get($flexboxgrid-breakpoints, sm)) {
-    body { padding-top: 0; }
+    body { padding-top: $navSmallHeight; }
     .container { width: 90%; }
 }
