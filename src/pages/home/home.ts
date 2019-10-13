@@ -1,6 +1,6 @@
 import i18n from '../../i18n/fr-FR.json';
 import Rellax from 'rellax';
-import { SmoothScrollAnim } from '../../scripts/smooth-scroll';
+import SmoothScroll from 'smooth-scroll';
 import { NavbarAnim } from '../../layouts/navbar/navbar';
 
 interface Member {
@@ -15,7 +15,7 @@ interface Member {
 window.onload = () => {
 
     // Init smooth scroll
-    new SmoothScrollAnim();
+    new SmoothScroll('a[href*="#"]');
 
     // Init navbar animations
     new NavbarAnim();

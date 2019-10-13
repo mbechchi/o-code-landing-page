@@ -39,6 +39,7 @@
     "webpack-dev-server": "^3.7.2"
   },
   "dependencies": {
-    "rellax": "^1.10.0"
+    "rellax": "^1.10.0",
+    "smooth-scroll": "^16.1.0"
   }
 }
