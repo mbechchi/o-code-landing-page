@@ -511,6 +511,9 @@
 
             padding: $sectionPaddingTop 0 0;
 
+            .shape-left { transform: translate3d(0, 96px, 0) scale3d(1.1, 1.1, 1.1); }
+            .shape-right { display: none; }
+
             h2 { text-align: center !important; }
             .service {
                 img { margin-bottom: 24px; }
@@ -520,6 +523,18 @@
         section#applications {
 
             padding: $sectionPaddingTop 0 0;
+
+            .shape-left {
+                transform: translate3d(0, 96px, 0) scale3d(1.1, 1.1, 1.1);
+                z-index: 2;
+                .shape:nth-child(1) { display: none; }
+            }
+            .shape-right {
+                transform: scale3d(1.1, 1.1, 1.1);
+                z-index: 1;
+                .shape:nth-child(1), .shape:nth-child(2), .shape:nth-child(3) { display: none; }
+                .shape:nth-child(4) { right: 0%; }
+            }
 
             .app {
 
@@ -560,11 +575,8 @@
 
             padding: $sectionPaddingTop 0 0;
 
-            .shape {
-                background-size: 70%;
-                &.shape-left { margin-top: 46px; }
-                &.shape-right { margin-right: -460px; }
-            }
+            .shape-left { transform: translate3d(-10%, 80px, 0) scale3d(0.7, 0.7, 0.7); }
+            .shape-right { display: none; };
 
             .row-desc { margin-bottom: 32px; }
 
@@ -578,7 +590,7 @@
 
             padding: $sectionPaddingTop 0 0;
 
-            .shape { display: none; }
+            .shape-left { display: none; }
 
             #member-preview-wrapper {
 
@@ -619,10 +631,8 @@
             padding: $sectionPaddingTop 0 64px;
             overflow: hidden;
 
-            .shape {
-                &.shape-left { display: none; }
-                &.shape-right { top: auto; bottom: -320px; right: -100px; }
-            }
+            .shape-left { display: none; }
+            .shape-right { transform: translate3d(8%, 280px, 0) scale3d(1, 1, 1); }
 
             form button { margin-top: 0; }
         }
