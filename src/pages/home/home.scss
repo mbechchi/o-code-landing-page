@@ -186,7 +186,7 @@
             }
         }
 
-        > .container > .row { position: relative; z-index: 999; }
+        > .container > .row { position: relative; z-index: 99; }
 
         .app {
             position: relative;
@@ -214,6 +214,8 @@
 
         padding: $sectionPaddingV 0;
 
+        > .container > .row { position: relative; z-index: 99; }
+
         .shape-left {
             right: auto;
             width: 600px;
@@ -223,12 +225,22 @@
             background-image: url('assets/images/advantages-shape-left.svg');
         }
         .shape-right {
-            left: auto;
-            width: 480px;
-            height: 480px;
-            margin-right: -350px;
-            margin-top: 10px;
-            background-image: url('assets/images/advantages-shape-right.svg');
+            .shape:nth-child(1) {
+                width: 500px;
+                height: 470px;
+                left: auto;
+                right: -42%;
+                background-image: url('assets/images/advantages-shape-right-1.svg');
+                z-index: 1;
+            }
+            .shape:nth-child(2) {
+                width: 118px;
+                height: 116px;
+                left: auto;
+                right: -10%;
+                background-image: url('assets/images/advantages-shape-right-2.svg');
+                z-index: 2;
+            }
         }
 
         .row { position: relative; }
