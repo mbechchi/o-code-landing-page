@@ -13,7 +13,7 @@ nav {
     background-color: transparent;
     transition: box-shadow 100ms linear, height 300ms ease-in-out, background-color 200ms linear;
     user-select: none;
-    z-index: 9;
+    z-index: 9999999;
 
     > .container {
         height: $navHeight;
