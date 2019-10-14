@@ -94,6 +94,78 @@
 
         padding: $sectionPaddingV 0;
 
+        .shape-left {
+
+            .shape:nth-child(1) {
+                width: 456px;
+                height: 449px;
+                top: -100px;
+                left: 110px;
+                right: auto;
+                background-image: url('assets/images/apps-shape-left-1.svg');
+                z-index: 1;
+            }
+            .shape:nth-child(2) {
+                width: 495px;
+                height: 460px;
+                top: -64px;
+                right: auto;
+                margin-left: -10px;
+                background-image: url('assets/images/apps-shape-left-2.svg');
+                z-index: 2;
+            }
+            .shape:nth-child(3) {
+                width: 119px;
+                height: 116px;
+                top: auto;
+                bottom: -24px;
+                right: auto;
+                background-image: url('assets/images/apps-shape-left-3.svg');
+                z-index: 3;
+            }
+        }
+
+        .shape-right {
+
+            .shape:nth-child(1) {
+                width: 309px;
+                height: 301px;
+                top: -90px;
+                right: -7%;
+                background-image: url('assets/images/apps-shape-right-1.svg');
+                z-index: 1;
+            }
+            .shape:nth-child(2) {
+                width: 244px;
+                height: 240px;
+                left: auto;
+                top: 130px;
+                right: 23%;
+                background-image: url('assets/images/apps-shape-right-2.svg');
+                z-index: 2;
+            }
+            .shape:nth-child(3) {
+                width: 465px;
+                height: 470px;
+                left: auto;
+                top: -42px;
+                right: 17px;
+                background-image: url('assets/images/apps-shape-right-3.svg');
+                z-index: 3;
+            }
+            .shape:nth-child(4) {
+                width: 140px;
+                height: 125px;
+                left: auto;
+                top: -60px;
+                right: 43%;
+                background-image: url('assets/images/apps-shape-right-4.svg');
+                z-index: 4;
+            }
+        }
+
+        > .container > .row { position: relative; z-index: 999; }
+
         .app {
             position: relative;
             height: 64px;
