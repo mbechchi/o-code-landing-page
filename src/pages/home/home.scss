@@ -158,6 +158,7 @@
                 height: 301px;
                 top: -90px;
                 right: -7%;
+                left: auto;
                 background-image: url('assets/images/apps-shape-right-1.svg');
                 z-index: 1;
             }
@@ -262,6 +263,8 @@
 
         padding: $sectionPaddingV 0;
 
+        > .container > .row { position: relative; z-index: 99; }
+
         .shape-left {
             .shape {
                 right: auto;
@@ -317,6 +320,7 @@
 
         #member-preview-wrapper {
 
+            position: relative;
             margin-top: -24px;
 
             .member-preview {
@@ -425,8 +429,24 @@
 
     @media screen and (max-width: map-get($flexboxgrid-breakpoints, md)) {
 
+        $sectionPaddingV: 148px;
+
+        .shape-left { margin-left: -16%; transform: scale3d(0.8, 0.8, 0.8); }
+        .shape-right { margin-right: -16%; transform: scale3d(0.8, 0.8, 0.8); }
+
+        section#services, section#applications, section#advantages { padding: $sectionPaddingV 0; }
+
         section#intro {
             .col-left img { height: 48px; }
+        }
+
+        section#applications {
+            .shape-left {
+                .shape:nth-child(3) { bottom: -300px; }
+            }
+            .shape-right {
+                .shape:nth-child(4) { top: -132px; right: 49%; }
+            }
         }
 
         section#team {
@@ -447,6 +467,8 @@
                 }
             }
         }
+
+        section#contact { padding: $sectionPaddingV 0; }
     }
 
     @media screen and (max-width: map-get($flexboxgrid-breakpoints, sm)) {
