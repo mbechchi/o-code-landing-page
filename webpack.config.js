@@ -74,6 +74,8 @@ let config = {
         historyApiFallback: true,
         inline: true,
         open: "Google Chrome",
+        host: '0.0.0.0',
+        port: 5400,
         hot: true
     },
     devtool: "eval-source-map"
