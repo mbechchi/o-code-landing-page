@@ -6,8 +6,10 @@ const OptimizeCSSAssets = require("optimize-css-assets-webpack-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const Pages = require('./src/pages/pages.ts');
-const i18n_FR = require('./src/i18n/fr-FR.json');
 
+const i18n = [
+    {name: 'fr', translation: require('./src/i18n/fr-FR.json')}
+];
 
 let config = {
     mode: "production",
@@ -64,7 +66,7 @@ let config = {
         new UglifyJSPlugin(),
         new OptimizeCSSAssets(),
         new CopyWebpackPlugin([
-            {from: "./src/assets", to: "assets/"},
+            {from: "./src/assets", to: "/assets/"},
             {from: "./src/manifest.json", to: "manifest.json"}
         ])
     ],
@@ -86,15 +88,18 @@ for (let i = 0; i < Pages.length; i++) {
 
     let page = Object.assign({}, Pages[i]);
 
-    config.plugins.push(
-        new HtmlWebpackPlugin({
-            template: page.template,
-            templateParameters: {
-                i18n: i18n_FR
-            },
-            filename: page.output
-        })
-    );
+    for (let y = 0; y < i18n.length; y++) {
+
+        config.plugins.push(
+            new HtmlWebpackPlugin({
+                template: page.template,
+                templateParameters: {
+                    i18n: i18n[y].translation
+                },
+                filename: i18n[y].name === 'fr' ? page.output : `${i18n[y].name}/${page.output}`
+            })
+        );
+    }
 }
 
 module.exports = config;
