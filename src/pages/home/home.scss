@@ -21,7 +21,7 @@
                     top: -74px;
                     left: -74px;
                     height: 434px;
-                    background-image: url('assets/images/intro-shape.svg');
+                    background-image: url('/assets/images/intro-shape.svg');
                 }
             }
         }
@@ -68,7 +68,7 @@
                 height: 558px;
                 margin-left: -216px;
                 margin-top: -8px;
-                background-image: url('assets/images/service-shape-left.svg');
+                background-image: url('/assets/images/service-shape-left.svg');
             }
         }
         .shape-right {
@@ -79,7 +79,7 @@
                 top: auto;
                 bottom: 10px;
                 right: -16%;
-                background-image: url('assets/images/service-shape-right-1.svg');
+                background-image: url('/assets/images/service-shape-right-1.svg');
                 z-index: 1;
             }
             .shape:nth-child(2) {
@@ -87,7 +87,7 @@
                 height: 520px;
                 left: auto;
                 right: -33%;
-                background-image: url('assets/images/service-shape-right-2.svg');
+                background-image: url('/assets/images/service-shape-right-2.svg');
                 z-index: 2;
             }
             .shape:nth-child(3) {
@@ -96,7 +96,7 @@
                 left: auto;
                 top: 110px;
                 right: -2%;
-                background-image: url('assets/images/service-shape-right-3.svg');
+                background-image: url('/assets/images/service-shape-right-3.svg');
                 z-index: 3;
             }
         }
@@ -128,7 +128,7 @@
                 top: -100px;
                 left: 110px;
                 right: auto;
-                background-image: url('assets/images/apps-shape-left-1.svg');
+                background-image: url('/assets/images/apps-shape-left-1.svg');
                 z-index: 1;
             }
             .shape:nth-child(2) {
@@ -137,7 +137,7 @@
                 top: -64px;
                 right: auto;
                 margin-left: -10px;
-                background-image: url('assets/images/apps-shape-left-2.svg');
+                background-image: url('/assets/images/apps-shape-left-2.svg');
                 z-index: 2;
             }
             .shape:nth-child(3) {
@@ -146,7 +146,7 @@
                 top: auto;
                 bottom: -24px;
                 right: auto;
-                background-image: url('assets/images/apps-shape-left-3.svg');
+                background-image: url('/assets/images/apps-shape-left-3.svg');
                 z-index: 3;
             }
         }
@@ -159,7 +159,7 @@
                 top: -90px;
                 right: -7%;
                 left: auto;
-                background-image: url('assets/images/apps-shape-right-1.svg');
+                background-image: url('/assets/images/apps-shape-right-1.svg');
                 z-index: 1;
             }
             .shape:nth-child(2) {
@@ -168,7 +168,7 @@
                 left: auto;
                 top: 130px;
                 right: 23%;
-                background-image: url('assets/images/apps-shape-right-2.svg');
+                background-image: url('/assets/images/apps-shape-right-2.svg');
                 z-index: 2;
             }
             .shape:nth-child(3) {
@@ -177,7 +177,7 @@
                 left: auto;
                 top: -42px;
                 right: 17px;
-                background-image: url('assets/images/apps-shape-right-3.svg');
+                background-image: url('/assets/images/apps-shape-right-3.svg');
                 z-index: 3;
             }
             .shape:nth-child(4) {
@@ -186,7 +186,7 @@
                 left: auto;
                 top: -60px;
                 right: 43%;
-                background-image: url('assets/images/apps-shape-right-4.svg');
+                background-image: url('/assets/images/apps-shape-right-4.svg');
                 z-index: 4;
             }
         }
@@ -228,7 +228,7 @@
                 height: 600px;
                 margin-left: -210px;
                 margin-top: -44px;
-                background-image: url('assets/images/advantages-shape-left.svg');
+                background-image: url('/assets/images/advantages-shape-left.svg');
             }
         }
         .shape-right {
@@ -237,7 +237,7 @@
                 height: 470px;
                 left: auto;
                 right: -42%;
-                background-image: url('assets/images/advantages-shape-right-1.svg');
+                background-image: url('/assets/images/advantages-shape-right-1.svg');
                 z-index: 1;
             }
             .shape:nth-child(2) {
@@ -245,7 +245,7 @@
                 height: 116px;
                 left: auto;
                 right: -10%;
-                background-image: url('assets/images/advantages-shape-right-2.svg');
+                background-image: url('/assets/images/advantages-shape-right-2.svg');
                 z-index: 2;
             }
         }
@@ -272,7 +272,7 @@
                 height: 780px;
                 margin-top: -100px;
                 margin-left: -200px;
-                background-image: url('assets/images/team-shape.svg');
+                background-image: url('/assets/images/team-shape.svg');
             }
         }
 
@@ -284,7 +284,7 @@
                 width: 100%;
                 padding: 1px;
                 margin-bottom: 24px;
-                background: url('assets/images/slider-member-back-1.svg') center center no-repeat;
+                background: url('/assets/images/slider-member-back-1.svg') center center no-repeat;
                 background-size: contain;
                 cursor: pointer;
                 user-select: none;
@@ -302,17 +302,17 @@
                 }
 
                 &:hover, &.selected {
-                    background-image: url('assets/images/slider-member-back-1_hover.svg');
+                    background-image: url('/assets/images/slider-member-back-1_hover.svg');
                 }
 
                 &:nth-child(2n) {
 
-                    background-image: url('assets/images/slider-member-back-2.svg');
+                    background-image: url('/assets/images/slider-member-back-2.svg');
 
                     .member-image { -webkit-clip-path: url(#member-shape-2); clip-path: url(#member-shape-2); }
 
                     &:hover, &.selected {
-                        background-image: url('assets/images/slider-member-back-2_hover.svg');
+                        background-image: url('/assets/images/slider-member-back-2_hover.svg');
                     }
                 }
             }
@@ -351,7 +351,7 @@
                     &:hover { transform: scale3d(1.04, 1.04, 1.04); }
                 }
                 .btn-prev {
-                    background-image: url('assets/images/slider-prev.svg');
+                    background-image: url('/assets/images/slider-prev.svg');
                     top: -30px;
                     left: 0;
                     padding-left: 15px;
@@ -360,7 +360,7 @@
                     &:hover { color: $primary; }
                 }
                 .btn-next {
-                    background-image: url('assets/images/slider-next.svg');
+                    background-image: url('/assets/images/slider-next.svg');
                     right: 64px;
                     top: -20px;
                     line-height: 96px;
@@ -407,7 +407,7 @@
                 width: 200px;
                 height: 400px;
                 margin-left: -120px;
-                background-image: url('assets/images/contact-shape-left.svg');
+                background-image: url('/assets/images/contact-shape-left.svg');
             }
         }
         .shape-right {
@@ -417,7 +417,7 @@
                 height: 580px;
                 margin-right: -200px;
                 margin-top: 80px;
-                background-image: url('assets/images/contact-shape-right.svg');
+                background-image: url('/assets/images/contact-shape-right.svg');
             }
         }
 

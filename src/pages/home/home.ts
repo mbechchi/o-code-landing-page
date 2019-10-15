@@ -76,7 +76,7 @@ const initSlider = () => {
         membersEl[memberIndex].classList.add('selected');
 
         // Set member preview
-        memberImageEl['style'].backgroundImage = `url('assets/images/${selectedMember.IMAGE}')`;
+        memberImageEl['style'].backgroundImage = `url('/assets/images/${selectedMember.IMAGE}')`;
         memberNameEl.innerHTML = selectedMember.NAME;
         memberStatusEl.innerHTML = selectedMember.STATUS;
         memberXpEl.innerHTML = selectedMember.XP;

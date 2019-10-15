@@ -150,7 +150,7 @@ nav {
             margin-top: 20px;
             margin-left: -90px;
             transform: translate3d(-100%, 0, 0);
-            background-image: url('assets/images/contact-shape-left.svg');
+            background-image: url('/assets/images/contact-shape-left.svg');
         }
         .shape-right {
             left: auto;
@@ -159,7 +159,7 @@ nav {
             margin-right: -370px;
             margin-top: 80px;
             transform: translate3d(100%, 0, 0);
-            background-image: url('assets/images/contact-shape-right.svg');
+            background-image: url('/assets/images/contact-shape-right.svg');
         }
 
         > .row {
