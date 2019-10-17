@@ -2,6 +2,8 @@
 
     $sectionPaddingV: 200px;
 
+    position: relative;
+
     .container { position: relative; }
 
     section#intro {
@@ -261,7 +263,7 @@
 
     section#team {
 
-        padding: $sectionPaddingV 0;
+        padding: $sectionPaddingV 0 0;
 
         > .container > .row { position: relative; z-index: 99; }
 
@@ -387,9 +389,9 @@
             }
 
             .member-description {
-                .member-name { color: $primary; }
+                .member-name { color: $primary; margin-top: 24px; }
                 .member-status { font-size: 1.4rem; color: $secondary; margin-bottom: 8px; }
-                .member-xp { font-size: 1.4rem; color: $grey; margin-bottom: 40px; }
+                .member-xp { font-size: 1.4rem; color: $grey; margin-bottom: 48px; }
                 .member-informations { font-size: 1.4rem; color: $light; }
             }
         }
@@ -397,9 +399,21 @@
 
     section#contact {
 
-        background-color: #4C4CE0;
+        position: relative;
         color: white;
-        padding: $sectionPaddingV 0 ($sectionPaddingV + 48px);
+        padding: 112px 0 ($sectionPaddingV + 48px);
+
+        // Footer background
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 1781px;
+            height: 1042px;
+            margin-left: -(1781px/2);
+            background: url('/assets/images/footer-bg.svg') top center no-repeat;
+        }
 
         .shape-left {
             .shape:nth-child(1) {
