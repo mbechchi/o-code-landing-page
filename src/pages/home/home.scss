@@ -299,8 +299,6 @@
                     background-size: cover;
                     background-repeat: no-repeat;
                     background-position: center;
-                    -webkit-clip-path: url(#member-shape-1);
-                    clip-path: url(#member-shape-1);
                 }
 
                 &:hover, &.selected {
@@ -310,8 +308,6 @@
                 &:nth-child(2n) {
 
                     background-image: url('/assets/images/slider-member-back-2.svg');
-
-                    .member-image { -webkit-clip-path: url(#member-shape-2); clip-path: url(#member-shape-2); }
 
                     &:hover, &.selected {
                         background-image: url('/assets/images/slider-member-back-2_hover.svg');
