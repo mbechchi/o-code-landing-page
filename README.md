@@ -10,6 +10,7 @@
 - [Getting Started](#getting-started)
 - [Production build](#production-build)
 - [App Structure](#app-structure)
+- [Add Translation](#add-translation)
 
 ## Getting Started
 * [Download the installer](https://nodejs.org/) for Node.js 8.9.3 or greater.
@@ -43,3 +44,9 @@
     ├── tsconfig.json           # Typescript configuration
     ├── webpack.config.json     # Webpack configuration
     └── README.md
+
+
+## Add Translation
+* Add your new translation `json` file in `src/i18n`.
+* Open `webpack.config.js` and add new translation in `i18n` const.
+* Run build and find translation in `public/${lang}/`.
