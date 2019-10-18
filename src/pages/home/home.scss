@@ -389,10 +389,13 @@
             }
 
             .member-description {
-                .member-name { color: $primary; margin-top: 24px; }
-                .member-status { font-size: 1.4rem; color: $secondary; margin-bottom: 8px; }
-                .member-xp { font-size: 1.4rem; color: $grey; margin-bottom: 48px; }
-                .member-informations { font-size: 1.4rem; color: $light; }
+                position: relative;
+                height: 400px;
+
+                .member-name { position: absolute; top: 88px; left: 1.5rem; right: 1.5rem; color: $primary; }
+                .member-status { position: absolute; top: 120px; left: 1.5rem; right: 1.5rem; font-size: 1.4rem; color: $secondary; }
+                .member-xp { position: absolute; top: 144px; left: 1.5rem; right: 1.5rem; font-size: 1.4rem; color: $grey; margin-bottom: 48px; }
+                .member-informations { position: absolute; top: 224px; left: 1.5rem; right: 1.5rem; font-size: 1.4rem; color: $light; }
             }
         }
     }
@@ -607,7 +610,7 @@
 
         section#team {
 
-            margin-bottom: -168px;
+            margin-bottom: -96px;
             padding: $sectionPaddingTop 0 0;
 
             .shape-left { display: none; }
@@ -643,23 +646,20 @@
                 }
 
                 .member-description {
-                    margin-top: -24px;
+                    margin-top: -114px;
+                    height: 290px;
                     text-align: left;
-                    .member-xp { margin-bottom: 48px; }
                 }
             }
         }
 
         section#contact {
 
+            background-color: #4C4CE0;
             padding: 264px 0 64px;
             overflow: hidden;
 
-            &:before {
-                bottom: -122px;
-                left: -100px;
-                margin-left: 0;
-            }
+            &:before { display: none; }
 
             .shape-left { display: none; }
             .shape-right { transform: translate3d(8%, 280px, 0) scale3d(1, 1, 1); }
