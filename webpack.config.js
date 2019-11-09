@@ -94,6 +94,8 @@ for (let i = 0; i < Pages.length; i++) {
             new HtmlWebpackPlugin({
                 template: page.template,
                 templateParameters: {
+                    title: page.title,
+                    description: page.description,
                     i18n: i18n[y].translation
                 },
                 filename: i18n[y].name === 'fr' ? page.output : `${i18n[y].name}/${page.output}`
