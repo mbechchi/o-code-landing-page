@@ -532,7 +532,7 @@
             .shape-left { transform: translate3d(0, 96px, 0) scale3d(1.1, 1.1, 1.1); }
             .shape-right { display: none; }
 
-            h2 { text-align: center !important; }
+            h2, p { text-align: center !important; }
             .service {
                 img { margin-bottom: 24px; }
             }
