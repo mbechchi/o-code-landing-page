@@ -1,0 +1,109 @@
+@mixin container-basis() {
+	position: relative;
+
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 100%;
+
+	// create new stacking context
+	z-index: 0;
+
+}
+
+@mixin make-container($breakpoint, $factor: 1) {
+
+	@if $breakpoint == 'sm' {
+		@media (min-width: $breakpoint-sm) {
+			width: $container-sm * $factor;
+		}
+	}
+
+	@if $breakpoint == 'md' {
+		@media (min-width: $breakpoint-md) {
+			width: $container-md * $factor;
+		}
+	}
+
+	@if $breakpoint == 'lg' {
+		@media (min-width: $breakpoint-lg) {
+			width: $container-lg * $factor;
+		}
+	}
+
+	@if $breakpoint == 'xl' {
+		@media (min-width: $breakpoint-xl) {
+			width: $container-xl * $factor;
+		}
+	}
+
+	@if $breakpoint == 'xxl' {
+		@media (min-width: $breakpoint-xxl) {
+			width: $container-xxl * $factor;
+		}
+	}
+}
+
+.l-container {
+
+	@include container-basis();
+
+	@include make-container('sm');
+	@include make-container('md');
+	@include make-container('lg');
+	@include make-container('xl');
+	// @include make-container('xxl');
+
+}
+
+.l-container-sm {
+
+	@include container-basis();
+
+	@include make-container('sm');
+
+}
+
+.l-container-md {
+
+	@include container-basis();
+
+	@include make-container('sm');
+	@include make-container('md');
+
+}
+
+.l-container-lg {
+
+	@include container-basis();
+
+	@include make-container('sm');
+	@include make-container('md');
+	@include make-container('lg');
+
+}
+
+.l-container-xl {
+
+	@include container-basis();
+
+	@include make-container('sm');
+	@include make-container('md');
+	@include make-container('lg');
+	@include make-container('xl');
+
+}
+
+// Mid
+
+.l-mid-container {
+
+	@include container-basis();
+	margin: 0;
+
+	@include make-container('sm', 0.5);
+	@include make-container('md', 0.5);
+	@include make-container('lg', 0.5);
+	@include make-container('xl', 0.5);
+	// @include make-container('xxl');
+
+}

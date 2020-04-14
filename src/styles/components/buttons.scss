@@ -1,0 +1,124 @@
+$button-font-family: $font-family-base;
+$button-font-weight: $font-weight-semibold;
+$button-font-size: $font-size-s;
+$button-height: 50px;
+
+$button-rounded-radius: 0;
+
+@mixin button-basis() {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	min-height: $button-height;
+	min-width: 200px;
+	max-width: 100%;
+	padding: $space-m $space-l;
+
+	font-family: $button-font-family;
+	font-weight: $button-font-weight;
+	font-size: $button-font-size;
+	text-transform: uppercase;
+	line-height: 1;
+	letter-spacing: 0.84px;
+
+	// box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+
+	// transition: color $transition-default,
+	// 	background-color $transition-default,
+	// 	box-shadow $transition-default,
+	// 	transform $transition-default;
+
+	overflow: hidden;
+
+	&:hover,
+	&:focus {
+		cursor: pointer;
+		outline: 0;
+	}
+}
+
+@mixin button-variant($color, $background, $color-hover: $background, $background-hover: $color) {
+
+	color: $color !important;
+	background-color: $background;
+
+	// &:hover,
+	// &:focus {
+	// 	// color: $color-hover !important;
+	// 	// background-color: $background-hover;
+	// 	box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
+	// }
+
+	&.c-btn-animated {
+		.char {
+			// font-weight: $button-font-weight;
+			&:before,
+			&:after {
+			  color: $color;
+			}
+		}
+	}
+
+}
+
+.c-btn {
+	@include button-basis();
+
+	// Modifiers (business)
+
+	&--default {
+		@include button-variant($white, $black);
+	}
+
+	&--primary {
+		@include button-variant($white, $primary-color);
+	}
+
+	&--primary-reverse {
+		@include button-variant($primary-color, $white);
+	}
+
+	&--clear {
+		@include button-variant($black, transparent, $primary-color, transparent);
+		box-shadow: none !important;
+	}
+
+	// Modifiers (shape)
+
+}
+
+
+.c-btn-animated {
+
+	.char {
+		overflow: hidden;
+		color: transparent;
+
+		&:before,
+		&:after {
+		  visibility: visible;
+		  transition: transform 0.5s cubic-bezier(0.9,0,.2,1);
+		  transition-delay: calc( 0.2s + ( 0.02s * ( var(--char-index)) ) );
+		}
+
+		&:before {
+		//   color: $white;
+		  transform: translateY(-100%);
+		  transition-delay: calc( 0.02s * ( var(--char-index)) );
+		}
+	}
+
+	&:hover {
+		.char {
+			&:before {
+				transform: translateY(0%);
+				transition-delay: calc( 0.2s + ( 0.02s * ( var(--char-index)) ) );
+			}
+			&:after {
+				transform: translateY(100%);
+				transition-delay: calc( 0.02s * ( var(--char-index)) );
+			}
+		}
+	}
+}

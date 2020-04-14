@@ -1,0 +1,47 @@
+// ----------
+// Typography
+// ----------
+
+.u-bold { font-weight: $font-weight-bold; }
+.u-semibold { font-weight: $font-weight-semibold; }
+.u-medium { font-weight: $font-weight-medium; }
+.u-normal { font-weight: normal !important; }
+.u-light { font-weight: $font-weight-light; }
+
+.u-small { font-size: rem($font-size-s); }
+.u-uppercase { text-transform: uppercase; }
+.u-capitalize { text-transform: capitalize; }
+.u-italic { font-style: italic; }
+.u-underline { text-decoration: underline; }
+
+.u-font-base { font-family: $font-family-base; }
+.u-font-heading { font-family: $font-family-heading; }
+
+.u-fs-base 	{
+    font-size: rem($font-size-base);
+    &\@main { @media (min-width: $breakpoint-main) { font-size: rem($font-size-base); } }
+}
+.u-fs-xs 	{
+    font-size: rem($font-size-xs);
+    &\@main { @media (min-width: $breakpoint-main) {  font-size: rem($font-size-xs); } }
+}
+.u-fs-s 	{
+    font-size: rem($font-size-s);
+    &\@main { @media (min-width: $breakpoint-main) { font-size: rem($font-size-s); } }
+}
+.u-fs-m 	{
+    font-size: rem($font-size-m);
+    &\@main { @media (min-width: $breakpoint-main) { font-size: rem($font-size-m);  } }
+}
+.u-fs-l 	{
+    font-size: rem($font-size-l);
+    &\@main { @media (min-width: $breakpoint-main) { font-size: rem($font-size-l); } }
+}
+.u-fs-xl 	{
+    font-size: rem($font-size-xl);
+    &\@main { @media (min-width: $breakpoint-main) { font-size: rem($font-size-xl); } }
+}
+.u-fs-xxl 	{
+    font-size: rem($font-size-xxl);
+    &\@main { @media (min-width: $breakpoint-main) { font-size: rem($font-size-xxl); } }
+}

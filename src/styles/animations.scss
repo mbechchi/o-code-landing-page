@@ -1,0 +1,42 @@
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.u-fadeInUp {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeInUp;
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateX(150%) scaleX(0.5);
+  }
+}
+
+@keyframes will-change {
+  0% { will-change: transform; }
+  100% { will-change: auto; }
+}
+
+.c-letter-slide-in {
+  // Splitting JS dependencies
+  .char {
+    animation: slide-in 3s cubic-bezier(0,.75,0,1) 0s both, will-change 2s linear;
+    animation-delay: calc(0.5s + 0.75s * var(--char-percent));
+    opacity: 0.99;
+  }
+}

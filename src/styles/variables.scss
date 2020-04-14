@@ -1,0 +1,106 @@
+/**********************
+****** Options *******
+**********************/
+
+$white: #fff;
+$black: #101010;
+
+$blue: #0852FF;
+
+$grey10:    #F7F9FF;
+$grey20:    #E9EEF2; // title ?
+$grey30:    #E1ECF2; // text ?
+$grey40:    #C9D3D9; //
+$grey50:    #989797;
+$grey70:    #747474; //
+$grey90:    #0D2330;
+
+$font-family-base: 'Montserrat', Helvetica, sans-serif;
+$font-family-heading: 'DM Sans', $font-family-base;
+
+$line-height-base: 1.6;
+
+$font-size-xxs: 8px;
+$font-size-xs: 12px;
+$font-size-s: 14px;
+$font-size-m: 28px;
+$font-size-l: 32px;
+$font-size-xl: 44px;
+$font-size-xxl: 70px;
+$font-size-base: 16px;
+
+$font-weight-thin: 100;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+$size-25: 25%;
+$size-50: 50%;
+$size-75: 75%;
+$size-100: 100%;
+
+$space-default: 16px;
+$space-xxs: 2px;
+$space-xs: 4px;
+$space-s: 8px;
+$space-m: 16px;
+$space-l: 32px;
+$space-xl: 48px;
+$space-xxl: 96px;
+
+$container-sm: 540px;
+$container-md: 720px;
+$container-lg: 960px;
+$container-xl: 1140px;
+$container-xxl: 1430px;
+
+$breakpoint-xs: 0;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1440px;
+$breakpoint-main: $breakpoint-lg;
+
+$border-radius-xs: 2px;
+$border-radius-s: 4px;
+$border-radius-m: 8px;
+$border-radius-base: $border-radius-s;
+
+$transition-time-default: 0.25s;
+$transition-easing-default: cubic-bezier(.17,.67,.52,.97);
+$transition-easing-pop: cubic-bezier(.07,.74,.13, 1.18);
+$transition-default: $transition-time-default $transition-easing-default;
+
+/**********************
+****** Objects *******
+**********************/
+
+$primary-color: $blue;
+$text-color: $black;
+
+$success-color: #76a973;
+$warning-color: #ffce00;
+$danger-color: #f04141;
+
+$html-font-size-root: $font-size-base;
+$html-font-size-root-mobile: $font-size-base;
+
+$body-background: $white;
+$body-line-height: $line-height-base;
+$body-font-family: $font-family-base;
+$body-color: $text-color;
+
+$link-text-color: currentColor;
+$link-text-decoration: none;
+$link-hover-color: $primary-color;
+$link-hover-decoration: none;
+
+$header-height: 120px;
+
+$hr-margin-top: $space-s;
+$hr-margin-bottom: $space-s;
+$hr-size: 1px;
+$hr-color: $black;

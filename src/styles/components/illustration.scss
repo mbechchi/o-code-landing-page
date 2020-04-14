@@ -1,0 +1,39 @@
+.c-code-frame {
+
+    // initial fixed values
+    $pictureSize: 210px;
+    $frameSize: 155px;
+    $squaredContext: 285px;
+    // All these initial values are turned into ratio to keep the frame responsive
+
+    position: relative;
+    z-index: 0;
+    padding-bottom: 100%;
+
+    &__picture {
+        position: absolute !important;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        width: percentage($pictureSize / $squaredContext) !important;
+        height: percentage($pictureSize / $squaredContext) !important;
+    }
+
+    &__frame {
+        position: absolute;
+        top: percentage(95px / $squaredContext);
+        left: percentage(15px / $squaredContext);
+        z-index: 0;
+        width: percentage($frameSize / $squaredContext);
+        height: percentage($frameSize / $squaredContext);
+    }
+
+}
+
+.c-rounded-illustration {
+    border-radius: 50%;
+    border: 1px solid $white;
+    img {
+        border-radius: 50%;
+    }
+}

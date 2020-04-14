@@ -1,0 +1,34 @@
+[{
+    "testimonials": [
+        {
+            "name": "Pierre BOUREY",
+            "job": "Responsable Transformation - Projets Emergeants chez SNCF - DSIV",
+            "title": "Gestion de parc et d’affectations des tablettes des agents chez SNCF",
+            "quote": [
+                "Simple et rapide à mettre en place, nous cherchions une solutions de gestion et de sécurisation de notre parc. Grâce à O°code nous avons réduit les problèmes de vols et nous avons un suivi temps réel de l’affectation de notre flotte très nomade.",
+                "Le marquage physique associé à la blockchain sont facilitant et sécurisant pour nous et la gestion n’a jamais été aussi fluide, y compris pour les Agents."
+            ],
+            "pic": "pierre-bourey"
+        },
+        {
+            "name": "Alexandre LAUNAY",
+            "job": "CEO chez StampYt",
+            "title": "Accéder au pedigree d’un véhicule via un coffre fort numérique avec StampYt",
+            "quote": [
+                "Nous avons co-développé notre produit StampYt Protect avec O°code sur la base de leur solution technologique. Cela nous permet de gérer les données intimes et les documents associés à chaque véhicule de manière irréfutables et sécurisées en nous appuyant sur un tiers de confiance.",
+                "La simplicité d’intégration chez nos clients concessionnaires et la compatibilité avec leurs logiciels métier est en outre un atout majeur."
+            ],
+            "pic": "alexandre-launay"
+        },
+        {
+            "name": "Pierre LEROY",
+            "job": "Co-founder chez EP - Président French PropTech",
+            "title": "Gérer le suivi et la preuve d’intervention sur un parc immobilier avec EP",
+            "quote": [
+                "La valeur d’un bien immobilier dépend du suivi irréprochable et sans discontinuité des interventions des corps d’état successifs. O°code nous a permis, grâce au code gravé et à sa blockchain, de déployer un outil facile de prise en main et collaboratif pour s’assurer du passage de chaque artisan.",
+                "Chaque intervention est certifiée et inscrite à vie dans le registre numérique de chaque bien. Cela permet au propriétaire de valoriser son immeuble, et aux artisans de connaitre l’historique pour intervenir de la manière la plus pertinente."
+            ],
+            "pic": "pierre-leroy"
+        }
+    ]
+}]

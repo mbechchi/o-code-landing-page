@@ -1,0 +1,53 @@
+$form-border-width: 1px;
+$form-border-color: $white;
+$form-background: transparent;
+$form-color: $white;
+$form-height: 36px;
+$form-radius: 0;
+$form-font-size: $font-size-s;
+
+// Shared styles for forms
+%form-appearance {
+    border: $form-border-width solid $form-border-color;
+    border-radius: $form-radius;
+    background-color: $form-background;
+    color: $form-color;
+    font-size: $form-font-size;
+    min-height: $form-height;
+
+    padding: $space-s;
+
+    &:focus {
+      outline: 0;
+    }
+
+    &.has-error {
+        border-color: $danger-color;
+    }
+}
+
+.c-label {
+    display: block;
+    font-size: $form-font-size;
+    font-weight: $font-weight-medium;
+    color: $form-color;
+    text-transform: uppercase;
+}
+
+.c-input {
+    @extend %form-appearance;
+    display: block;
+    width: 100%;
+}
+
+.c-textarea {
+    @extend %form-appearance;
+    display: block;
+    width: 100%;
+    min-height: 85px;
+    resize: none;
+}
+
+
+
+

@@ -1,0 +1,58 @@
+{
+  "name": "o-code",
+  "private": true,
+  "description": "",
+  "version": "0.1.0",
+  "author": "",
+  "dependencies": {
+    "@popmotion/popcorn": "^0.4.4",
+    "aws-sdk": "^2.653.0",
+    "cookieconsent": "^3.1.1",
+    "framer-motion": "^1.10.3",
+    "gatsby": "^2.20.9",
+    "gatsby-image": "^2.3.1",
+    "gatsby-plugin-layout": "^1.2.1",
+    "gatsby-plugin-manifest": "^2.3.3",
+    "gatsby-plugin-offline": "^3.1.2",
+    "gatsby-plugin-react-helmet": "^3.2.1",
+    "gatsby-plugin-sass": "^2.2.1",
+    "gatsby-plugin-sharp": "^2.5.3",
+    "gatsby-plugin-web-font-loader": "^1.0.4",
+    "gatsby-source-filesystem": "^2.2.2",
+    "gatsby-transformer-json": "^2.3.1",
+    "gatsby-transformer-sharp": "^2.4.3",
+    "intersection-observer": "^0.7.0",
+    "node-sass": "^4.13.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^5.2.1",
+    "react-intersection-observer": "^8.26.1",
+    "react-loadable": "^5.5.0",
+    "react-transition-group": "^4.3.0",
+    "react-use": "^13.27.1",
+    "react-visibility-sensor": "^5.1.1",
+    "sass": "^1.26.3",
+    "splitting": "^1.0.6"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.2"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}

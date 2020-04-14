@@ -1,0 +1,37 @@
+.c-bullet {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: $primary-color;
+
+    &--big {
+        width: 15px;
+        height: 15px;
+    }
+
+    &--empty {
+        background-color: transparent;
+        border: 1px solid $primary-color;
+    }
+
+    &--scaleIn {
+        @keyframes scaleIn {
+            0% {
+              opacity: 0;
+              transform: scale(0);
+            }
+            20% {
+              opacity: 1;
+            }
+            100% {
+              opacity: 1;
+              transform: scale(1);
+            }
+        }
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-name: scaleIn;
+        animation-delay: 1.5s;
+    }
+}

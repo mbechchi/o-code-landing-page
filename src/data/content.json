@@ -1,0 +1,139 @@
+[{
+    "global": {
+        "brand": {
+            "name": "O°Code",
+            "description": "Une technologie qui permet d’authentifier et suivre les interactions avec n’importe quel objet tout au long de sa vie."
+        },
+        "header": {
+            "title": "header",
+            "navigation": {
+                "solution": "Solution",
+                "testimonials": "Clients",
+                "contact": "Contact"
+            },
+            "cta": "Demander une démo"
+        },
+        "footer": {
+            "copyright": "All Rights Reserved © 2020 O°code",
+            "locations": [
+                {
+                    "title": "La Rochelle",
+                    "address": ""
+                },
+                {
+                    "title": "Nantes",
+                    "address": "Le Palace<br>4 rue Voltaire<br>44100 Nantes"
+                }
+            ],
+            "social": {
+                "title": "Nous suivre",
+                "instagram": "Instagram",
+                "twitter": "Twitter",
+                "linkedin": "Linkedin"
+            },
+            "navigation": {
+                "policy": "Mentions Légales",
+                "privacy": "Protection des données"
+            }
+        }
+    },
+    "form": {
+        "title": "Jean-Baptiste va répondre à votre demande !",
+        "name": "Votre nom",
+        "tel": "Votre téléphone",
+        "email": "Votre mail",
+        "emailError": "Adresse email invalide",
+        "company": "Votre entreprise",
+        "message": "Votre message",
+        "submit": "Demander une démo",
+        "sending": "Envoi de votre message...",
+        "sent": "Votre message a bien été envoyé, merci !"
+    },
+    "home": {
+        "headband": {
+            "title": "Product memories",
+            "desc": [
+                "Consultez et alimentez la mémoire de n’importe quel objet."
+            ],
+            "cta": "Demander une démo"
+        },
+        "solution": {
+            "title": "Identifier. Tracer. Interagir.",
+            "features": [
+                {
+                    "title": "Un code unique gravé à même l’objet",
+                    "desc": [
+                        "Esthétique, indélébile et inviolable, ce code permet, par un simple scan, d’authentifier chaque objet, d’accéder à sa ligne de vie selon votre profil sécurisé et d’identifier son détenteur actuel."
+                    ],
+                    "tldr": "Des dispositifs de gravage autonomes sont mis à votre disposition.",
+                    "pic": "visuel-codeunique"
+                },
+                {
+                    "title": "Un coffre-fort numérique",
+                    "desc": [
+                        "Fonction de vos droits, vous pouvez consulter ou incrémenter tous les documents associés à l’objet dès son origine et tout au long de sa vie."
+                    ],
+                    "tldr": "Compatible avec tous les logiciels métiers sans développements spécifiques",
+                    "pic": "visuel-coffrefort"
+                },
+                {
+                    "title": "Une blockchain de traçabilité et gestion de la preuve",
+                    "desc": [
+                        "Chaque interaction ou intervention par un acteur identifié de la chaine est certifiée et enregistrée à vie (horodatage, géolocalisation et photographies)."
+                    ],
+                    "tldr": "Chacun, interne ou externe à l’entreprise, peut contribuer selon ses droits.",
+                    "pic": "visuel-blockchain"
+                },
+                {
+                    "title": "Un espace d'interactions",
+                    "desc": [
+                        "Augmentez vos objets en les associant à des contenus riches comme des tutoriels par exemple ou encore en y associant des modules de conversation pour permettre de fluidifier les échanges entre les services de votre entreprise."
+                    ],
+                    "pic": "visuel-interaction"
+                },
+                {
+                    "title": "Un tableau de bord en temps réel",
+                    "desc": [
+                        "En un coup d'œil visualiser le parc de vos ressources et leurs affectations, gérez les droits d'accès, paramétrez votre application pour une meilleure gestion de votre entreprise et de vos collaborateurs."
+                    ],
+                    "tldr": "Vous pouvez également paramétrer des process, des champs personnalisés et un système d'alertes.",
+                    "pic": "visuel-dashboard"
+                }
+            ]
+        },
+        "testimonials": {
+            "title": "Ces entreprises utilisent O°Code pour gérer leurs ressources matérielles.",
+            "testimonials": [
+                {
+                    "quote": [
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat"
+                    ],
+                    "name": "Prénom Nom",
+                    "job": "Poste occupé"
+                },
+                {
+                    "quote": [
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat"
+                    ],
+                    "name": "Prénom Nom",
+                    "job": "Poste occupé"
+                }
+            ]
+        },
+        "demo-band": {
+            "title": "Vous souhaitez découvrir et tester O°Code ?",
+            "cta": "Demander une démo"
+        }
+    },
+    "no_content": {
+        "title": "Oups !",
+        "message": "Il semblerait que cette page ne soit pas prête...",
+        "cta": "Revenir à l'accueil"
+    },
+    "policy": {
+        "title": "Mentions légales"
+    },
+    "privacy": {
+        "title": "Protection des données"
+    }
+}]

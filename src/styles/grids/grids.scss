@@ -1,0 +1,54 @@
+// Using flexbox for the grid
+// inspired by http://flexboxgrid.com/
+
+.l-grid {
+	display: flex;
+	flex-wrap: wrap;
+	flex: 0 1 auto;
+	flex-direction: row;
+	width: 100%;
+}
+
+.l-col {
+	position: relative;
+	display: block;
+	flex: 0 0 auto;
+	// Default
+	flex-basis: 100%;
+	max-width: 100%;
+}
+
+@mixin flexbox-width($percentage) {
+	flex-basis: $percentage;
+	max-width: $percentage;
+}
+
+@mixin column($suffix) {
+
+	// Basic relative grid
+	.l-col {
+		&-full#{$suffix} { @include flexbox-width(100%) }
+		&-one-half#{$suffix} { @include flexbox-width(50%) }
+		&-one-third#{$suffix} { @include flexbox-width(33.3333%) }
+		&-two-third#{$suffix} { @include flexbox-width(66.6666%) }
+		&-one-quarter#{$suffix} { @include flexbox-width(25%) }
+		&-three-quarter#{$suffix} { @include flexbox-width(75%) }
+		&-one-fifth#{$suffix} { @include flexbox-width(20%) }
+		&-two-fifth#{$suffix} { @include flexbox-width(40%) }
+		&-three-fifth#{$suffix} { @include flexbox-width(60%) }
+		&-four-fifth#{$suffix} { @include flexbox-width(80%) }
+	}
+
+	// Alternative 12 columns
+	@for $i from 1 through 12 {
+		.l-col-#{$i}#{$suffix} {
+			@include flexbox-width(percentage($i / 12))
+		}
+	}
+}
+
+@include column('');
+
+@media (min-width: $breakpoint-main) {
+	@include column(\@main);
+}

@@ -1,0 +1,40 @@
+$spinner-size: 80px;
+$spinner-border: 4px;
+$spinner-color: $primary-color;
+
+@keyframes ripple {
+    0% {
+      top: $spinner-size / 2 - $spinner-border;
+      left: $spinner-size / 2 - $spinner-border;
+      width: 0;
+      height: 0;
+      opacity: 1;
+    }
+    100% {
+      top: 0px;
+      left: 0px;
+      width: $spinner-size - $spinner-border*2;
+      height: $spinner-size - $spinner-border*2;
+      opacity: 0;
+    }
+}
+
+.c-spinner {
+    display: inline-block;
+    position: relative;
+    width: $spinner-size;
+    height: $spinner-size;
+
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        border: $spinner-border solid $spinner-color;
+        opacity: 1;
+        border-radius: 50%;
+        animation: ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    }
+  &:after {
+    animation-delay: -0.5s;
+  }
+}

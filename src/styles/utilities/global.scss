@@ -1,0 +1,30 @@
+// ----------
+// Global
+// ----------
+
+.u-reset-list { @include reset-ul(); }
+
+.u-overflow-hidden { overflow: hidden; }
+.u-overflow-auto { overflow: auto; }
+
+@for $i from 0 through 5 {
+    .u-zi-#{$i} { z-index: $i; }
+}
+.u-zi--1 { z-index: -1; }
+
+.u-hide-scrollbar { @include hideScrollbar; }
+
+.u-br-base { border-radius: $border-radius-base; }
+.u-br-xs { border-radius: $border-radius-xs; }
+.u-br-s { border-radius: $border-radius-s; }
+.u-br-m { border-radius: $border-radius-m; }
+
+.u-transition { transition: all $transition-default; }
+
+// Shame
+.u-clickable:hover { cursor: pointer; }
+.u-not-clickable { pointer-events: none; }
+
+.u-draggable:hover { cursor: grab; }
+
+.u-to-0 { transform-origin: 0 0 !important; }

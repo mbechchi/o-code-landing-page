@@ -1,0 +1,21 @@
+.c-block-video {
+
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    line-height: 0;
+
+    &__placeholder {
+        display: inline-block;
+        width: 100%;
+        padding-top: 100%;
+    }
+
+    &__video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}

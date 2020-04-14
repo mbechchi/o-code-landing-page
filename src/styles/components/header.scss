@@ -1,0 +1,64 @@
+.c-header {
+
+    position: fixed;
+    width: 100%;
+    height: $header-height;
+    display: flex;
+    align-items: center;
+    height: $header-height;
+
+    transition: transform $transition-default;
+    background-color: $body-background;
+
+    z-index: 1;
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    &__menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+
+        li {
+            text-transform: uppercase;
+            font-size: rem($font-size-s);
+            a,
+            button {
+                position: relative;
+                &:after {
+                    content: '';
+                    @extend .c-bullet;
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    transform: translate(-50%, 5px) scale(0.5);
+                    opacity: 0;
+                }
+                &:hover {
+                    color: $link-hover-color;
+                    transition: color $transition-default;
+                    &:after {
+                        opacity: 1;
+                        transform: translate(-50%, 5px) scale(1);
+                        transition: opacity $transition-default, transform $transition-default;
+                    }
+                }
+            }
+        }
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+    }
+
+}
