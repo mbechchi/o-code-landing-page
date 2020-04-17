@@ -15,6 +15,11 @@ const ProtectionDesDonneesPage = (props) => {
           node {
             privacy {
               title
+              content {
+                title
+                desc
+                list
+              }
             }
           }
         }
@@ -29,13 +34,34 @@ const ProtectionDesDonneesPage = (props) => {
       <SEO title={content.title} />
 
       <section className="u-pd-vt-xxl u-fadeInUp">
-        <div className="l-container u-pd-hz-l">
+        <div className="l-container-lg u-pd-hz-l">
 
           <FadeInUp yOffset={50} delay={100}>
-            <h1 className="c-h2 u-mg-bottom-l">
+            <h1 className="c-h2 u-mg-bottom-xl">
               {content.title}
             </h1>
           </FadeInUp>
+
+          {content.content.map((item, index) => (
+            <section className="u-mg-bottom-l" key={"mentions-" + index}>
+
+              { item.title && <h2 className="c-h4 u-mg-bottom-m">{item.title}</h2> }
+
+              {item.desc.map((desc, descIndex) => (
+                <p className="u-mg-bottom-m" key={"mentions-" + index + "-" + descIndex} dangerouslySetInnerHTML={{ __html: desc}}></p>
+              ))}
+
+              { item.list &&
+                <ul className="u-pd-left-xl">
+                  { item.list.map((list, listIndex) => (
+                    <li className="u-mg-bottom-m" key={"mentions-" + index + "-" + listIndex}>
+                      <p dangerouslySetInnerHTML={{ __html: list}}></p>
+                    </li>
+                  ))}
+                </ul>
+              }
+            </section>
+          ))}
 
         </div>
       </section>

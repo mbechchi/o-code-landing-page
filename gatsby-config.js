@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `O°Code - Consultez et alimentez la mémoire de n’importe quel objet`,
+    title: `O°Code - product memories`,
     description: `Une technologie qui permet d’authentifier et suivre les interactions avec n’importe quel objet tout au long de sa vie.`,
     author: `@tibomahe`,
     siteImage: ``,

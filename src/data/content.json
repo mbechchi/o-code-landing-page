@@ -2,7 +2,7 @@
     "global": {
         "brand": {
             "name": "O°Code",
-            "description": "Une technologie qui permet d’authentifier et suivre les interactions avec n’importe quel objet tout au long de sa vie."
+            "description": "La technologie pour authentifier et suivre les interactions avec n’importe quel objet tout au long de sa vie."
         },
         "header": {
             "title": "header",
@@ -71,7 +71,7 @@
                 {
                     "title": "Un coffre-fort numérique",
                     "desc": [
-                        "Fonction de vos droits, vous pouvez consulter ou incrémenter tous les documents associés à l’objet dès son origine et tout au long de sa vie."
+                        "En fonction de vos droits, vous pouvez consulter ou incrémenter tous les documents associés à l’objet dès son origine et tout au long de sa vie."
                     ],
                     "tldr": "Compatible avec tous les logiciels métiers sans développements spécifiques",
                     "pic": "visuel-coffrefort"
@@ -94,7 +94,7 @@
                 {
                     "title": "Un pilotage en temps réel",
                     "desc": [
-                        "En un coup d'œil visualiser le parc de vos ressources et leurs affectations, gérez les droits d'accès, paramétrez votre application pour une meilleure gestion de votre entreprise et de vos collaborateurs."
+                        "En un coup d'œil visualisez le parc de vos ressources et leurs affectations, gérez les droits d'accès, paramétrez votre application pour une meilleure gestion de votre entreprise et de vos collaborateurs."
                     ],
                     "tldr": "Vous pouvez également paramétrer des process, des champs personnalisés et un système d'alertes.",
                     "pic": "visuel-dashboard"
@@ -131,9 +131,75 @@
         "cta": "Revenir à l'accueil"
     },
     "policy": {
-        "title": "Mentions légales"
+        "title": "Mentions légales",
+        "content": [
+            {
+                "title": "Editeur :",
+                "desc": [
+                    "Le site Web et les Services de O°code sont la propriété et sont exploités par la SAS  SAFETHING, 322 B Route du Puy Charpentreau, 85000 La Roche-Sur-Yon. La société est immatriculée au Registre du commerce et des sociétés de la Roche-Sur-Yon sous le N° – RCS 822 879 128,  elle est représentée par son président Monsieur Dominique CHABOT, Directeur de la publication.",
+                    "Vous pouvez nous contacter à l’adresse mail : bonjour (AT) o-code (DOT) co"
+                ]
+            },
+            {
+                "title": "Design - Développement :",
+                "desc": [
+                    "Direction artistique web : Olwen Gendrot  <a href='http://olwengendrot.com/' class='u-primary' target='_blank' rel='noopener noreferrer'>olwengendrot.com</a> <br> Développement web : Thibault Mahé <a href='http://thibault.mahe.io/' class='u-primary' target='_blank' rel='noopener noreferrer'>thibault.mahe.io</a>"
+                ]
+            },
+            {
+                "title": "L’hébergement de ce site est assuré par  :",
+                "desc": [
+                    "Hébergeur : OVH <br> Société : OVH <br> Adresse web : <a href='https://www.ovh.com/' class='u-primary' target='_blank' rel='noopener noreferrer'>www.ovh.com</a> <br> Adresse Postale : <br> <div class='u-pd-left-m'> 2 rue kellermann <br> BP 80157 <br> 59053 ROUBAIX Cedex 1 </div> Téléphone : +33 (0)8 203 203 63 <br> Adresse électronique (E-Mail) : support (AT) ovh (DOT) com"
+                ]
+            },
+            {
+                "title": "Mention « Copyright et droits de propriété intellectuelle » :",
+                "desc": [
+                    "La marque et le logo O°code sont des marques déposées. Les contenus des Services de O°code, de ses produits, programmes informatiques, codes sources et du site Web sont protégés par la loi relative à la propriété intellectuelle. Toute reproduction ou modification de quelque nature que ce soit est interdite."
+                ]
+            },
+            {
+                "title": "Mentions relatives à la gestion de vos données personnelles :",
+                "desc": [
+                    "Les informations recueillies dans le cadre d’une demande de contact auprès de O°code font l’objet d’un traitement informatique uniquement destiné à la fourniture d’une réponse à votre demande. O°code est seul destinataire des données. Conformément à la loi française sur la protection des données personnelles no. 78-17 du 6 janvier 1978 modifiée, vous disposez du droit d’accès à vos données personnelles, de rectification et de correction, voire de suppression de vos données qui seraient inadaptées, incomplètes, équivoques ou obsolètes, ainsi que du droit de refuser le traitement de vos données personnelles pour des motifs légitimes. Pour exercer un de ces droits et obtenir la communication des données dont nous disposons à votre sujet, veuillez nous contacter directement à l’adresse ci-dessous : <div class='u-pd-left-m'><span class='u-bold'>Safething</span> <br> 322 B Route du Puy Charpentreau <br> 85000 La Roche-Sur-Yon <br> email : bonjour (AT) o-code (DOT) co</div>"
+                ]
+            },
+            {
+                "title": "Mentions relatives aux Cookies :",
+                "desc": [
+                    "O°code peut être amené à installer des cookies sur le système de votre ordinateur, qui stockent des informations relatives à votre navigation sur le site. Nous pourrons lire ces informations lors de vos prochaines visites. La durée de conservation de ces informations dans votre ordinateur est de 30 jours Ces cookies ne nous permettent pas de vous identifier."
+                ]
+            },
+            {
+                "title": "Mentions générales :",
+                "desc": [
+                    "Les informations fournies par l’exploitant du site web le sont à titre indicatif. L’exploitant du site web ne saurait garantir l’exactitude, la complétude, l’actualité des informations diffusées sur son site. En conséquence, l’utilisateur reconnaît utiliser ces informations sous sa responsabilité exclusive."
+                ]
+            }
+        ]
     },
     "privacy": {
-        "title": "Protection des données"
+        "title": "Protection des données",
+        "content": [
+            {
+                "desc": [
+                    "Cette politique de confidentialité s’applique à <a href='https://www.o-code.co' class='u-primary'>https://www.o-code.co</a> détenu et opéré par SAFETHING SAS, 322 B Route du Puy Charpentreau 85000 La Roche-Sur-Yon."
+                ]
+            },
+            {
+                "title": "Protection des données personnelles et GDPR",
+                "desc": [
+                    "AFETHING satisfait aux conditions de la loi  ACT N°78-17 – “LOI INFORMATIQUE ET LIBERTES” du 6 Janvier 1978 modifiée le 6 Aout 2004 relativement à la protection des individus au regard du  traitement des données personnelles.",
+                    "SAFETHING satisfait également aux obligations de la nouvelle réglementation générale européenne sur la protection des données, applicable depuis le 25 Mai 2018. Notamment :"
+                ],
+                "list": [
+                    "SAFETHING ne fait aucun commerce de vos données, de vos métadonnées ou de vos traces d’activité ni ne les utilise pour entrainer des systèmes d’apprentissage automatique ou intelligences artificielles.",
+                    "Dans la plus grande majorité des cas, les services web de SAFETHING ne voient pas vos données, ne voient pas vos métadonnées et ne peuvent pas tracer votre activité.",
+                    "SAFETHING ne prélève que le strict minimum de données requis pour votre utilisation des logiciels et services : nom, prénom et email, et propose quand c’est possible des services anonymes ou pseudonymes au moyen d’identités numériques librement choisies et sous seul contrôle des usagers.",
+                    "SAFETHING chiffre tous les échanges directs entre usagers de bout en bout avec des secrets sous leur seul contrôle, et chiffre toutes les connexions des logiciels entre eux et aux services web en utilisant des connexions chiffrées sous TLS/SSL.",
+                    "SAFETHING ne conserve aucune trace de votre activité autre que strictement nécessaire au fonctionnement du site, et détruit sauf obligation légale toute notification ou donnée chiffrée sous un délai maximal de trois mois. Pour toute précision, vous pouvez écrire à bonjour (AT) o-code (DOT) co"
+                ]
+            }
+        ]
     }
 }]

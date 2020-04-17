@@ -15,6 +15,10 @@ const MentionsLegalesPage = (props) => {
           node {
             policy {
               title
+              content {
+                title
+                desc
+              }
             }
           }
         }
@@ -28,14 +32,23 @@ const MentionsLegalesPage = (props) => {
     <Layout {...props} className="u-height-full">
       <SEO title={content.title} />
 
-      <section className="u-pd-vt-xxl u-fadeInUp">
-        <div className="l-container u-pd-hz-l">
+      <section className="u-pd-vt-xl u-fadeInUp">
+        <div className="l-container-lg u-pd-hz-l">
 
           <FadeInUp yOffset={50} delay={100}>
-            <h1 className="c-h2 u-mg-bottom-l">
+            <h1 className="c-h2 u-mg-bottom-xl">
               {content.title}
             </h1>
           </FadeInUp>
+
+          {content.content.map((item, index) => (
+            <section className="u-mg-bottom-l" key={"mentions-" + index}>
+              <h2 className="c-h4 u-mg-bottom-m">{item.title}</h2>
+              {item.desc.map((desc, descIndex) => (
+                <p className="u-mg-bottom-m" key={"mentions-" + index + "-" + descIndex} dangerouslySetInnerHTML={{ __html: desc}}></p>
+              ))}
+            </section>
+          ))}
 
         </div>
       </section>
