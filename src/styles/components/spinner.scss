@@ -37,4 +37,11 @@ $spinner-color: $primary-color;
   &:after {
     animation-delay: -0.5s;
   }
+
+  &--light {
+    &:before,
+    &:after {
+        border-color: $white;
+    }
+  }
 }

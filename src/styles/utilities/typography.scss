@@ -29,6 +29,10 @@
     font-size: rem($font-size-s);
     &\@main { @media (min-width: $breakpoint-main) { font-size: rem($font-size-s); } }
 }
+.u-fs-sm 	{
+    font-size: rem($font-size-sm);
+    &\@main { @media (min-width: $breakpoint-main) { font-size: rem($font-size-sm); } }
+}
 .u-fs-m 	{
     font-size: rem($font-size-m);
     &\@main { @media (min-width: $breakpoint-main) { font-size: rem($font-size-m);  } }

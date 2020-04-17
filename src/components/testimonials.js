@@ -16,35 +16,40 @@ export const testimonialPictureFragment = graphql`
   }
 `
 
+const transition = {
+    duration: 0,
+    ease: "easeInOut"
+};
+
 const testimonialContentVariants = {
     enter: () => ({
-        y: 50,
-        opacity: 0
+        opacity: 0,
+        transition: transition
     }),
     center: () => ({
         zIndex: 1,
-        y: 0,
-        opacity: 1
+        opacity: 1,
+        transition: transition
     }),
     exit: () => ({
         zIndex: 0,
-        y: 50,
-        opacity: 0
+        opacity: 0,
+        transition: transition
     })
 };
 
 const testimonialPictureVariants = {
     enter: () => ({
-        scale: 0,
-        opacity: 0
+        opacity: 0,
+        transition: transition
     }),
     center: () => ({
-        scale: 1,
-        opacity: 1
+        opacity: 1,
+        transition: transition
     }),
     exit: () => ({
-        scale: 0,
-        opacity: 0
+        opacity: 0,
+        transition: transition
     })
 };
 

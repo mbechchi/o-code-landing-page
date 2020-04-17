@@ -65,8 +65,7 @@
     }
 }
 
-p {
-    a {
-        text-decoration: underline;
-    }
+.c-link,
+p a {
+    text-decoration: underline;
 }

@@ -27,7 +27,11 @@ const LoadForm = Loadable({
       return <Form {...props} />;
     },
     loading() {
-      return <div></div>
+      return (
+        <div className="u-center">
+          <div className="c-spinner c-spinner--light"></div>
+        </div>
+      )
     }
 });
 
@@ -67,6 +71,9 @@ const FormModal = ({ modalClassName, ...props }) => {
   `);
 
     const content = data.allContentJson.edges[0].node.form
+
+    // Preload the AWS component
+    LoadForm.preload();
 
     return (
         <ModalContextConsumer>

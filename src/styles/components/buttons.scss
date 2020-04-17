@@ -36,6 +36,10 @@ $button-rounded-radius: 0;
 		cursor: pointer;
 		outline: 0;
 	}
+
+	&.is-disabled {
+        @extend %is-disabled;
+    }
 }
 
 @mixin button-variant($color, $background, $color-hover: $background, $background-hover: $color) {

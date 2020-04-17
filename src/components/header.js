@@ -5,7 +5,6 @@ import Logo from "../components/svg/logo"
 import { ButtonFormModal } from "../components/formModal"
 
 import { useScrollPosition } from "../components/utils/scrollPosition"
-import { ScaleUp } from "../components/animations/scaleUp"
 
 const Header = ({ onScrollToRef, location }) => {
 
@@ -58,11 +57,9 @@ const Header = ({ onScrollToRef, location }) => {
           <div className="u-flex u-flex-between u-flex-center-vt u-height-full">
 
             <div className="c-header__logo u-pd-hz-m u-pd-hz-0@main">
-              <ScaleUp delay={300}>
-                <Link to="/" aria-label="logo">
-                  <Logo className="c-logo" aria-label="logo"/>
-                </Link>
-              </ScaleUp>
+              <Link to="/" aria-label="logo">
+                <Logo className="c-logo" aria-label="logo"/>
+              </Link>
             </div>
 
             <div className="c-header__menu u-hide u-flex@main">
@@ -70,29 +67,21 @@ const Header = ({ onScrollToRef, location }) => {
               { location.pathname === '/' &&
                 <ul className="c-header__nav u-reset-list u-pd-hz-l">
                   <li className="u-pd-hz-l">
-                    <ScaleUp delay={300}>
-                      <button onClick={() => onScrollToRef('solution')}>{content.navigation.solution}</button>
-                    </ScaleUp>
+                    <button onClick={() => onScrollToRef('solution')}>{content.navigation.solution}</button>
                   </li>
                   <li className="u-pd-hz-l">
-                    <ScaleUp delay={300}>
-                      <button onClick={() => onScrollToRef('testimonials')}>{content.navigation.testimonials}</button>
-                    </ScaleUp>
+                    <button onClick={() => onScrollToRef('testimonials')}>{content.navigation.testimonials}</button>
                   </li>
                   <li className="u-pd-hz-l">
-                    <ScaleUp delay={300}>
-                      <button onClick={() => onScrollToRef('contact')}>{content.navigation.contact}</button>
-                    </ScaleUp>
+                    <button onClick={() => onScrollToRef('contact')}>{content.navigation.contact}</button>
                   </li>
                 </ul>
               }
 
-              <ScaleUp delay={300}>
                 <ButtonFormModal
                   btnClassName="c-btn c-btn--primary"
                   btnLabel={content.cta}
                 />
-              </ScaleUp>
 
             </div>
 

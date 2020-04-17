@@ -8,7 +8,7 @@
             "title": "header",
             "navigation": {
                 "solution": "Solution",
-                "testimonials": "Clients",
+                "testimonials": "Cas d'usage",
                 "contact": "Contact"
             },
             "cta": "Demander une démo"
@@ -17,8 +17,8 @@
             "copyright": "All Rights Reserved © 2020 O°code",
             "locations": [
                 {
-                    "title": "La Rochelle",
-                    "address": ""
+                    "title": "La Roche-sur-Yon",
+                    "address": "322 B Rte du Puy Charpentreau<br>85000 La Roche-sur-Yon"
                 },
                 {
                     "title": "Nantes",
@@ -92,7 +92,7 @@
                     "pic": "visuel-interaction"
                 },
                 {
-                    "title": "Un tableau de bord en temps réel",
+                    "title": "Un pilotage en temps réel",
                     "desc": [
                         "En un coup d'œil visualiser le parc de vos ressources et leurs affectations, gérez les droits d'accès, paramétrez votre application pour une meilleure gestion de votre entreprise et de vos collaborateurs."
                     ],

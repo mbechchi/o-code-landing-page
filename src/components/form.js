@@ -5,12 +5,21 @@ import AnimatedButton from "../components/button"
 import { FadeInUp } from "../components/animations/fadeInUp"
 import { ScaleUp } from "../components/animations/scaleUp"
 
-import AWS from 'aws-sdk';
+let AWS, SNS;
 
-// Initialize the Amazon Cognito credentials provider
-AWS.config.region = 'us-east-1'; // Region
-AWS.config.credentials = new AWS.CognitoIdentityCredentials({
-    IdentityPoolId: 'us-east-1:c3d43947-50a2-4766-b73b-c2a1840be231',
+Promise.all([
+    import('aws-sdk/global'),
+    import('aws-sdk/clients/sns')
+])
+.then(([resAWS, resSNS]) => {
+    AWS = resAWS.default
+    SNS = resSNS.default
+
+    // Initialize the Amazon Cognito credentials provider
+    AWS.config.region = 'us-east-1'; // Region
+    AWS.config.credentials = new AWS.CognitoIdentityCredentials({
+        IdentityPoolId: 'us-east-1:c3d43947-50a2-4766-b73b-c2a1840be231',
+    });
 });
 
 const Form = ({ content, picture }) => {
@@ -122,7 +131,8 @@ const Form = ({ content, picture }) => {
             }
         });
 
-        const sns = new AWS.SNS();
+        const sns = new SNS();
+
         const params = {
             Message: JSON.stringify(state.formData),
             Subject: 'Contact from ' + state.formData.name + ' (' + state.formData.email + ')',
@@ -160,15 +170,15 @@ const Form = ({ content, picture }) => {
   return (
     <>
         <div className="u-flex u-flex-dir-col u-flex-dir-row@main u-flex-center-vt u-pd-hz-m@main u-mg-bottom-l">
-            <ScaleUp yOffset={50} delay={300}>
+            <ScaleUp yOffset={50} delay={100}>
                 <Img className="c-rounded-illustration" fixed={picture.childImageSharp.fixed} />
             </ScaleUp>
-            <FadeInUp yOffset={50} delay={300} className="u-pd-left-l">
+            <FadeInUp yOffset={50} delay={100} className="u-pd-left-l">
                 <h2 className="c-h3 u-center u-left@main">{content.title}</h2>
             </FadeInUp>
         </div>
 
-        <FadeInUp yOffset={50} delay={450} className="u-pd-hz-m@main">
+        <FadeInUp yOffset={50} delay={250} className="u-pd-hz-m@main">
             <form action="" className="u-pd-hz-xl@main">
 
                 <div className="c-form-group u-mg-bottom-m">
@@ -202,8 +212,9 @@ const Form = ({ content, picture }) => {
                 </div>
 
                 {!state.formEvent.sending && !state.formEvent.sent &&
-                    <AnimatedButton className="c-btn c-btn--primary-reverse u-mg-top-l" label={content.submit} onClick={(e) => handleSubmit(e)} />
+                    <AnimatedButton className={"c-btn c-btn--primary-reverse u-mg-top-l"} label={content.submit} onClick={(e) => handleSubmit(e)} />
                 }
+
                 {state.formEvent.sending && !state.formEvent.sent &&
                     <FadeInUp yOffset={50} delay={300} className="u-mg-top-l">
                         <p className="u-white">{content.sending}</p>

@@ -1,7 +1,6 @@
 import React, { useRef } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import Loadable from "react-loadable"
 
 import { IntersectionObserverProvider } from "../components/context/intersection0bserverContext"
 
@@ -14,20 +13,6 @@ import { FadeInUp } from "../components/animations/fadeInUp"
 
 import IntroVideoWebm from "../assets/videos/ocode-intro.webm"
 import IntroVideoMp4 from "../assets/videos/ocode-intro.mp4"
-
-// The AnimatedH1 component is client-side dependent.
-// React-loadable makes it only be loaded in the client
-const LoadAnimatedH1 = Loadable({
-  loader: () => import("../components/splitting"),
-  render(loaded, props) {
-    let { AnimatedH1 } = loaded.default;
-    return <AnimatedH1 {...props}/>;
-  },
-  loading() {
-    return <div className="c-spinner"></div>
-  },
-  delay: 500
-});
 
 export const homePictureFragment = graphql`
   fragment homePictureFragment on File {
@@ -121,40 +106,37 @@ const HomePage = (props) => {
         {/* Headband */}
         <IntersectionObserverProvider className="c-headband u-pd-vt-l">
           <div className="l-container u-pd-hz-l u-pd-hz-0@main">
-            <div className="l-grid u-flex-center-vt">
+            <FadeInUp yOffset={20} className="l-grid u-flex-center-vt">
               <div className="l-col-12 l-col-6@main u-pd-right-xxl@main">
 
-                  <LoadAnimatedH1
-                    className="c-h1 c-letter-slide-in u-mg-bottom-l"
-                    bulletClassName="c-bullet c-bullet--big c-bullet--scaleIn u-mg-left-s"
-                    content={content.headband.title}
-                  />
+                  <h1 className="c-h1 c-letter-slide-in u-mg-bottom-l">
+                    {content.headband.title}
+                    <span className="c-bullet c-bullet--big c-bullet--scaleIn u-mg-left-s"></span>
+                  </h1>
 
-                  <FadeInUp yOffset={20} delay={1000} className="u-pd-right-xl u-mg-bottom-l">
+                  <div className="u-pd-right-xl u-mg-bottom-l">
                     {content.headband.desc.map((item, index) => (
-                      <p className="u-mg-bottom-m" key={"headband-desc-" + index}>{item}</p>
+                      <p className="u-fs-sm u-mg-bottom-m" key={"headband-desc-" + index}>{item}</p>
                     ))}
-                  </FadeInUp>
+                  </div>
 
-                  <FadeInUp yOffset={20} delay={1500}>
-                      <ButtonFormModal
-                        btnClassName="c-btn c-btn--primary u-mg-bottom-l"
-                        btnLabel={content.headband.cta} />
-                  </FadeInUp>
+                  <ButtonFormModal
+                    btnClassName="c-btn c-btn--primary u-mg-bottom-l"
+                    btnLabel={content.headband.cta} />
 
               </div>
               <div className="l-col-12 l-col-6@main u-pd-left-xl@main">
 
-                <FadeInUp yOffset={60} delay={500} className="c-block-video">
+                <div className="c-block-video">
                   <span className="c-block-video__placeholder"></span>
                   <video className="c-block-video__video" muted playsInline autoPlay loop preload="metadata">
                     <source src={IntroVideoWebm} type="video/webm" />
                     <source src={IntroVideoMp4} type="video/mp4" />
                   </video>
-                </FadeInUp>
+                </div>
 
               </div>
-            </div>
+            </FadeInUp>
           </div>
         </IntersectionObserverProvider>
 

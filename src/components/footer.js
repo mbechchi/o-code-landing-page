@@ -50,25 +50,25 @@ const Footer = () => {
                     <div className="l-col-12 l-col-6@main">
                         <p className="u-mg-bottom-l" style={{ maxWidth: '380px' }}>{brand.description}</p>
                     </div>
-                    <div className="l-col-12 l-col-6@main l-grid u-flex-end@main">
+                    <div className="l-col-12 l-col-6@main l-grid u-flex-between u-flex-dir-col u-flex-dir-row@main">
                     {content.locations.map((item, index) => (
-                        <div className="l-col-6 l-col-4@main u-pd-bottom-m" key={"footer-location-" + index}>
+                        <div className="u-pd-bottom-m" key={"footer-location-" + index}>
                             <p className="u-bold u-uppercase">{item.title}</p>
                             <p dangerouslySetInnerHTML={{ __html: item.address }}></p>
                         </div>
                     ))}
-                        <div className="l-col-6 l-col-4@main u-pd-bottom-m">
+                        <div className="u-pd-bottom-m">
                             <p className="u-bold u-uppercase">{content.social.title}</p>
                             {/* <a href="#" target="_blank" rel="noopener noreferrer" className="u-block">{content.social.instagram}</a> */}
-                            <a href="https://twitter.com/ocode_tech" target="_blank" alt="Twitter" rel="noopener noreferrer" className="u-block">{content.social.twitter}</a>
-                            <a href="https://www.linkedin.com/company/ocode/about/" target="_blank" alt="LinkedIn" rel="noopener noreferrer" className="u-block">{content.social.linkedin}</a>
+                            <a href="https://twitter.com/ocode_tech" target="_blank" alt="Twitter" rel="noopener noreferrer" className="c-link u-block">{content.social.twitter}</a>
+                            <a href="https://www.linkedin.com/company/ocode/about/" target="_blank" alt="LinkedIn" rel="noopener noreferrer" className="c-link u-block">{content.social.linkedin}</a>
                         </div>
                     </div>
                 </div>
                 <div className="u-flex u-flex-center-vt@main u-flex-dir-col u-flex-dir-row-reverse@main u-flex-end">
                     <div className="u-flex@main u-pd-vt-m">
-                        <Link to="/mentions-legales" className="u-block u-fs-xs u-pd-right-l">{content.navigation.policy}</Link>
-                        <Link to="/protection-des-donnees" className="u-block u-fs-xs">{content.navigation.privacy}</Link>
+                        <Link to="/mentions-legales" className="c-link u-block u-fs-xs u-pd-right-l">{content.navigation.policy}</Link>
+                        <Link to="/protection-des-donnees" className="c-link u-block u-fs-xs">{content.navigation.privacy}</Link>
                     </div>
                     <p className="u-fs-xs u-grey70 u-pd-right-l@main">{content.copyright}</p>
                 </div>

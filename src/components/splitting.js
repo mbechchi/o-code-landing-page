@@ -19,20 +19,6 @@ const AnimatedButton = ({ className, label, style, onClick }) => {
     )
 }
 
-const AnimatedH1 = ({ className, bulletClassName, content}) => {
-    return (
-        <h1 className={className}
-            dangerouslySetInnerHTML={{ __html:
-                window && Splitting.html({
-                    content: content,
-                    by: 'chars'
-                })
-                + `<span class="${bulletClassName}"></span>`
-            }}>
-        </h1>
-    )
-}
-
-export default { AnimatedButton, AnimatedH1 };
+export default { AnimatedButton };
 
 

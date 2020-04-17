@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `O°Code`,
+    title: `O°Code - Consultez et alimentez la mémoire de n’importe quel objet`,
     description: `Une technologie qui permet d’authentifier et suivre les interactions avec n’importe quel objet tout au long de sa vie.`,
     author: `@tibomahe`,
     siteImage: ``,
@@ -40,6 +40,12 @@ module.exports = {
     `gatsby-transformer-json`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-webpack-bundle-analyser-v2`,
+      options: {
+        devMode: true,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
