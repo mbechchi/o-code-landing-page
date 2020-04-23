@@ -169,13 +169,15 @@ const Form = ({ content, picture }) => {
 
   return (
     <>
-        <div className="u-flex u-flex-dir-col u-flex-dir-row@main u-flex-center-vt u-pd-hz-m@main u-mg-bottom-l">
-            <ScaleUp yOffset={50} delay={100}>
-                <Img className="c-rounded-illustration" fixed={picture.childImageSharp.fixed} />
-            </ScaleUp>
-            <FadeInUp yOffset={50} delay={100} className="u-pd-left-l">
-                <h2 className="c-h3 u-center u-left@main">{content.title}</h2>
-            </FadeInUp>
+        <div>
+            <div className="u-flex u-flex-dir-col u-flex-dir-row@main u-flex-center-vt u-pd-hz-m@main u-mg-bottom-l">
+                <ScaleUp yOffset={50} delay={100}>
+                    <Img className="c-rounded-illustration" fixed={picture.childImageSharp.fixed} />
+                </ScaleUp>
+                <FadeInUp yOffset={50} delay={100} className="u-pd-left-l">
+                    <h2 className="c-h3 u-center u-left@main">{content.title}</h2>
+                </FadeInUp>
+            </div>
         </div>
 
         <FadeInUp yOffset={50} delay={250} className="u-pd-hz-m@main">
